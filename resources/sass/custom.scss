@@ -1,0 +1,69 @@
+/*
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+*/
+
+/*
+Custome styles
+*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#notification-container {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.is-borderless {
+    border: none !important;
+}
+
+.is-normal-wrap {
+    white-space: normal !important;
+}
+
+.is-margin-auto {
+    margin: auto !important;
+}
+
+.is-rupee::before {
+    content: '\20B9\0020';
+}
+
+.modal {
+    .is-modal-large {
+        width: 75%;
+    }
+
+    .is-modal-medium {
+        width: 60%;
+        padding: 1em;
+    }
+
+    .modal-content {
+        padding-top: 32px; // height of close icon
+    }
+
+    .modal-close {
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+}
+
+/**
+Extensions fixes
+**/
+.datetimepicker.is-active {
+    z-index: 100;
+}

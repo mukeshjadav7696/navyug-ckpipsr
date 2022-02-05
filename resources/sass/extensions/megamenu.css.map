@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,AAAA,QAAQ,CAAC;EACjB,QAAQ,EAAE,MAAM;CAMnB;;AAPD,AAGI,YAHQ,AAAA,QAAQ,CAGhB,mBAAmB,CAAC;EAChB,aAAa,EAAE,CAAC;EAChB,OAAO,EAAE,YAAY;CACxB",
+    "sources": [
+        "megamenu.scss"
+    ],
+    "names": [],
+    "file": "megamenu.css"
+}

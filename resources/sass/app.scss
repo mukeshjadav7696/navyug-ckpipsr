@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$beige-lighter: #EFF0EB;
+$kepple : #00b89c;
+$primary : $kepple;
+
+// Update Bulma's global variables
+$body-background-color: $beige-lighter;
+$family-sans-serif: "Nunito",
+sans-serif;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+$control-border-width: 1px;
+$input-shadow: none;
+
+$box-radius:3px;
+$box-padding: 1.5rem;
+
+@import "~bulma/bulma.sass";
+
+/**
+Extensions
+*/
+@import "~@creativebulma/bulma-divider";
+@import "bulma-calendar";
+@import "~@creativebulma/bulma-tagsinput";
+@import "~bulma-quickview";
+@import "~bulma-checkradio";
+@import "~bulma-list/sass/bulma-list.sass";
+@import "~bulma-switch";
+
+/**
+Tooltip
+**/
+$tooltip-background-opacity: 1;
+@import "~@creativebulma/bulma-tooltip";
+
+/**
+Custom
+**/
+@import "custom.scss";
