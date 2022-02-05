@@ -13,7 +13,7 @@ class HomePageController extends Controller
    */
   public function home()
   {
-    return redirect('welcome');
+    return view('home');
   }
 
   public function welcome()

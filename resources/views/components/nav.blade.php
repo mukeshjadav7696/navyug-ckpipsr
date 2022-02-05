@@ -10,11 +10,8 @@
         </a>
     </div>
     <div id="main-navbar" class="navbar-menu">
-        <div class="navbar-start">
-        </div>
-        <div class="navbar-end">
-
-        </div>
+        <div class="navbar-start"></div>
+        <div class="navbar-end"></div>
     </div>
 </nav>
 <script>
