@@ -68982,7 +68982,7 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/aroyal/workspace/excellence/navyug-app/resources/js/plugins.js */"./resources/js/plugins.js");
+module.exports = __webpack_require__(/*! /home/aroyal/workspace/excellence/navyug/navyug-ws/resources/js/plugins.js */"./resources/js/plugins.js");
 
 
 /***/ })

@@ -4,12 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-$beige-lighter: #EFF0EB;
 $kepple : #00b89c;
 $primary : $kepple;
 
 // Update Bulma's global variables
-$body-background-color: $beige-lighter;
+$body-background-color: #EFEFEF;
 $family-sans-serif: "Nunito",
 sans-serif;
 $widescreen-enabled: true;
@@ -21,6 +20,8 @@ $input-shadow: none;
 
 $box-radius:3px;
 $box-padding: 1.5rem;
+$navbar-height: 4rem;
+$navbar-padding-vertical: 1.2rem;
 
 @import "~bulma/bulma.sass";
 

@@ -18,10 +18,31 @@ main {
     flex: 1 0 auto;
 }
 
+#trust-panel-container {
+    position: relative;
+}
+
+#instiute-logo {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 5px);
+    z-index: 120;
+    background: white;
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    padding: 0.4rem;
+}
+
 #notification-container {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+}
+
+.is-position-relative {
+    position: relative !important;
 }
 
 .is-borderless {
@@ -59,11 +80,4 @@ main {
         right: 0px;
         top: 0;
     }
-}
-
-/**
-Extensions fixes
-**/
-.datetimepicker.is-active {
-    z-index: 100;
 }

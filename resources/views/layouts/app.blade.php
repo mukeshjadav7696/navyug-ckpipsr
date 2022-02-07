@@ -20,7 +20,7 @@
 <body>
 
     <header>
-        @include('components.nav')
+        @include('layouts.nav.main')
     </header>
 
     <main>

@@ -21785,9 +21785,9 @@ var Filter = /*#__PURE__*/_createClass(function Filter() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/aroyal/workspace/excellence/navyug-app/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/aroyal/workspace/excellence/navyug-app/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /home/aroyal/workspace/excellence/navyug-app/resources/sass/plugins.scss */"./resources/sass/plugins.scss");
+__webpack_require__(/*! /home/aroyal/workspace/excellence/navyug/navyug-ws/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/aroyal/workspace/excellence/navyug/navyug-ws/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /home/aroyal/workspace/excellence/navyug/navyug-ws/resources/sass/plugins.scss */"./resources/sass/plugins.scss");
 
 
 /***/ })
