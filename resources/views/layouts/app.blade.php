@@ -19,22 +19,21 @@
 
 <body>
 
+    @php
+        //get institute information from the configuration
+        $institute = config('institute.info');
+    @endphp
+
     <header>
-        @include('layouts.nav.main')
+        @include('layouts.elements.header')
     </header>
 
     <main>
         {{ $content }}
     </main>
 
-    <footer class="footer pt-3 pb-3">
-        <div class="content has-text-centered">
-            <p>
-                <strong>{{ config('app.name', 'Excellence') }}</strong>
-                <br />
-                All rights are reserved.
-            </p>
-        </div>
+    <footer>
+        @include('layouts.elements.footer')
     </footer>
 
     <script type="module">

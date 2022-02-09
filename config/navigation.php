@@ -86,6 +86,26 @@ return [
       'url' => '/about/contact-us',
       'icon' => 'fas fa-map'
     ],
-  ]
+  ],
 
+  'quick' => [
+    'home' => [
+      'Home' => '/',
+      'Profile' => '/about/profile'
+    ],
+    'about' => [
+      'The Founder' => '/about/founder',
+      'College App' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
+    ],
+    'links' => [
+      'Digital Gujarat' => 'https://www.digitalgujarat.gov.in/',
+      'National Scholorship' => 'https://scholarships.gov.in/',
+      'Digital Gujarat' => 'https://www.digitalgujarat.gov.in/',
+      'National Scholorship' => 'https://scholarships.gov.in/'
+    ],
+    'newletters' => [
+      'The Founder' => '/about/founder',
+      'College App' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
+    ],
+  ],
 ];

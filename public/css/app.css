@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);/*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;
 
-/* Bulma Utilities */
-
-.button,
+0,500;0,600;1,400;1,600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap);.button,
 .input,
 .textarea,
 .select select,
@@ -423,7 +421,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: #EFEFEF;
+  background-color: #EBFFFC;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -20983,6 +20981,10 @@ main {
   content: '\20B9   ';
 }
 
+a.is-link {
+  border-bottom: 1px dotted;
+}
+
 .modal .is-modal-large {
   width: 75%;
 }
@@ -21000,5 +21002,32 @@ main {
   position: absolute;
   right: 0px;
   top: 0;
+}
+
+.tags.are-tiny .tag {
+  font-size: 0.6em;
+}
+
+.is-lighten {
+  filter: brightness(70%);
+}
+
+.is-darken {
+  filter: brightness(50%);
+}
+
+.tag.is-secondary {
+  background-color: #EBFFFC;
+  color: #00b89c;
+}
+
+.is-secondary,
+.has-background-secondary {
+  background-color: #EBFFFC;
+  color: #00b89c;
+}
+
+.has-text-secondary {
+  color: #00b89c;
 }
 

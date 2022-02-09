@@ -61,6 +61,12 @@ main {
     content: '\20B9\0020';
 }
 
+a {
+    &.is-link {
+        border-bottom: 1px dotted;
+    }
+}
+
 .modal {
     .is-modal-large {
         width: 75%;
@@ -80,4 +86,20 @@ main {
         right: 0px;
         top: 0;
     }
+}
+
+.tags {
+    &.are-tiny {
+        .tag {
+            font-size: 0.6em;
+        }
+    }
+}
+
+.is-lighten {
+    filter: brightness(70%);
+}
+
+.is-darken {
+    filter: brightness(50%);
 }

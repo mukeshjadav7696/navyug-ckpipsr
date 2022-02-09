@@ -1,15 +1,18 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
 
 // Set your brand colors
 $kepple : #00b89c;
+$kepple-light: #EBFFFC;
 $primary : $kepple;
+$secondary : $kepple-light;
 
 // Update Bulma's global variables
-$body-background-color: #EFEFEF;
-$family-sans-serif: "Nunito",
+$body-background-color: $secondary;
+$family-sans-serif: 'Nunito',
 sans-serif;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
@@ -46,3 +49,20 @@ $tooltip-background-opacity: 1;
 Custom
 **/
 @import "custom.scss";
+
+.tag {
+    &.is-secondary {
+        background-color: $secondary;
+        color: $primary;
+    }
+}
+
+.is-secondary,
+.has-background-secondary {
+    background-color: $secondary;
+    color: $primary;
+}
+
+.has-text-secondary {
+    color: $primary;
+}

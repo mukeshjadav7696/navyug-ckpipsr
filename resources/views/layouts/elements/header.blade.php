@@ -11,24 +11,22 @@
             </div>
             <div class="column is-align-self-center pb-0">
                 <a href="{{ url('/') }}" id="instiute-logo">
-                    <img src="{{ config('institute.logo') }}">
+                    <img src="{{ config('institute.info.logo') }}">
                 </a>
             </div>
             <div class="column is-align-self-center pb-0">
-                <div class="right-contact">
-                    <a href="tel:(+91) 63550 55839">
-                        <span class="icon">
-                            <i class="fas fa-phone"></i>
-                        </span>
-                        <span>{{ config('institute.contact.phone') }}</span>
-                    </a>
-                    <a href="mailto:{{ config('institute.contact.email') }}">
-                        <span class="icon">
-                            <i class="fas fa-at"></i>
-                        </span>
-                        <span>{{ config('institute.contact.email') }}</span>
-                    </a>
-                </div>
+                <a href="tel:{{ config('institute.info.mobile') }}">
+                    <span class="icon">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <span>{{ config('institute.info.mobile') }}</span>
+                </a>
+                <a href="mailto:{{ config('institute.info.email') }}">
+                    <span class="icon">
+                        <i class="fas fa-at"></i>
+                    </span>
+                    <span>{{ config('institute.info.email') }}</span>
+                </a>
             </div>
         </div>
     </div>
@@ -37,7 +35,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item is-hidden-desktop" href="{{ url('/') }}">
-                <img src="{{ config('institute.logo') }}" style="height: 3.2rem;">
+                <img src="{{ config('institute.info.logo') }}" style="height: 3.2rem;">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                 data-target="main-navbar">
@@ -51,10 +49,10 @@
         ?>
         <div id="main-navbar" class="navbar-menu">
             <div class="navbar-start">
-                @include('layouts.nav.render', ['navigations' => $navigationDetail['left']])
+                @include('layouts.elements.nav', ['navigations' => $navigationDetail['left']])
             </div>
             <div class="navbar-end">
-                @include('layouts.nav.render', ['navigations' => $navigationDetail['right']])
+                @include('layouts.elements.nav', ['navigations' => $navigationDetail['right']])
             </div>
         </div>
     </div>

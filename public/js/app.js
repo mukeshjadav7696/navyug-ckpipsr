@@ -21358,6 +21358,19 @@ window.showMessage = _custom__WEBPACK_IMPORTED_MODULE_0__["showMessage"];
 
 
 window.FilterPanel = new _filter__WEBPACK_IMPORTED_MODULE_1__["default"]();
+/**
+ * Check whether client browser is mobile or desktop
+ * 
+ * @returns Boolean
+ */
+
+window.isMobile = function () {
+  if (/Mobi/.test(navigator.userAgent)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /***/ }),
 

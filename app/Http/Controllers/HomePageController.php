@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Helpers\APIEndpoints;
+use App\Helpers\APIHelper;
 
 class HomePageController extends Controller
 {
@@ -13,11 +14,70 @@ class HomePageController extends Controller
    */
   public function home()
   {
-    return view('home');
+    try {
+      //get institute data      
+      [$photos, $announcements, $notices, $events, $achievements] = $this->getServerData();
+      $serverData = compact('photos', 'announcements', 'notices', 'events', 'achievements');
+    } catch (\Throwable $th) {
+      $serverData = [
+        'photos' => collect(),
+        'announcements' => collect(),
+        'notices' => collect(),
+        'events' => collect(),
+        'achievements' => collect(),
+      ];
+    }
+
+    return view('home', $serverData);
   }
 
   public function welcome()
   {
     return view('welcome');
+  }
+
+  /**
+   * Get data from server for home page
+   *
+   * @return array
+   */
+  private function getServerData()
+  {
+    //get photos
+    $parameters = [
+      'is_home' => true,
+    ];
+    $photos = APIHelper::getData(APIEndpoints::GET_PHOTOS, $parameters);
+
+    //get announcements
+    $parameters = [
+      'is_home' => true,
+      'type' => 'ANNOUNCEMENT',
+      'date_format' => 'd-m'
+    ];
+    $announcements = APIHelper::getData(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
+
+    //get news
+    $parameters = [
+      'is_home' => true,
+      'type' => 'NOTICE',
+      'date_format' => 'd-m'
+    ];
+    $notices = APIHelper::getData(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
+
+    //get events
+    $parameters = [
+      'is_home' => true,
+    ];
+    $events = APIHelper::getData(APIEndpoints::GET_EVENTS, $parameters);
+
+    //get events
+    $parameters = [
+      'is_home' => true,
+      'date_format' => 'M d, y'
+    ];
+    $achievements = APIHelper::getData(APIEndpoints::GET_ACHIEVEMENTS, $parameters);
+
+    return [$photos, $announcements, $notices, $events, $achievements];
   }
 }

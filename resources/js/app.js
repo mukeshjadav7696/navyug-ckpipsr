@@ -13,3 +13,16 @@ window.showMessage = showMessage
  */
 import Filter from "./filter"
 window.FilterPanel = new Filter()
+
+/**
+ * Check whether client browser is mobile or desktop
+ * 
+ * @returns Boolean
+ */
+window.isMobile = function () {
+  if (/Mobi/.test(navigator.userAgent)) {
+    return true
+  } else {
+    return false
+  }
+}

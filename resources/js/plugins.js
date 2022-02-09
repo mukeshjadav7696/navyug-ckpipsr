@@ -14,4 +14,5 @@ try {
   window.bulmaTagsinput = require('@creativebulma/bulma-tagsinput/dist/js/bulma-tagsinput.min.js');
   window.bulmaQuickview = require('bulma-quickview/dist/js/bulma-quickview.min.js');
   window.Cropper = require('cropperjs')
+  window.Splide = require('@splidejs/splide').default
 } catch (e) { }
