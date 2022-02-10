@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\AcademicsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,21 @@ use App\Http\Controllers\HomePageController;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('about')
+  ->name('about.')
+  ->group(function () {
+    Route::get('profile', [AboutController::class, 'profile'])->name('profile');
+    Route::get('trust', [AboutController::class, 'trust'])->name('trust');
+    Route::get('vision-mission', [AboutController::class, 'visionMission'])->name('vision-mission');
+    Route::get('founder', [AboutController::class, 'founder'])->name('founder');
+    Route::get('governing-body', [AboutController::class, 'governingBody'])->name('governing-body');
+    Route::get('contact-us', [AboutController::class, 'contactUs'])->name('contact-us');
+  });
+
+Route::prefix('academics')
+  ->name('academics.')
+  ->group(function () {
+    Route::get('courses', [AcademicsController::class, 'courses'])->name('courses');
+    Route::get('admission', [AcademicsController::class, 'admission'])->name('admission');
+  });

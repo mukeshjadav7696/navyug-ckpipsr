@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="column is-align-self-center pb-0">
-                <a href="{{ url('/') }}" id="instiute-logo">
+                <a href="{{ url('/') }}" id="institute-logo">
                     <img src="{{ config('institute.info.logo') }}">
                 </a>
             </div>

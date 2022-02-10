@@ -5,7 +5,7 @@
                 <div class="columns">
                     <div class="column is-6">
                         <h5 class="subtitle has-text-weight-bold has-text-info">
-                            About The Instiute
+                            About The Institute
                         </h5>
                         <p class="has-text-justified">
                             {{ config('institute.info.description') }}
@@ -33,7 +33,7 @@
                         <p><?= nl2br(config('institute.info.address')) ?></p>
                         <div class="is-flex">
                             <div style="margin-left: -0.75em;">
-                                <a href="{{ config('instiute.info.location') }}" target="_blank"
+                                <a href="{{ config('institute.info.location') }}" target="_blank"
                                     class="is-flex is-align-items-center">
                                     <span class="icon is-large">
                                         <i class="fas fa-map-marker-alt fa-2x"></i>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="column is-6">
-                        <div class="columns is-mobile is-multiline">
+                        <div class="columns is-multiline">
                             <div class="column is-half">
                                 <span class="icon">
                                     <i class="far fa-envelope"></i>

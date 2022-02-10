@@ -7,7 +7,7 @@ return [
     | Institute navigations
     |--------------------------------------------------------------------------
     |
-    | This file is for storing navigation of the instiute
+    | This file is for storing navigation of the institute
     |   For divider between to links - [],
     |   For internal routes use url syntax    
     */
@@ -26,6 +26,14 @@ return [
           'url' => '/about/profile'
         ],
         [
+          'title' => 'Vision and Mission',
+          'url' => '/about/vision-mission'
+        ],
+        [
+          'title' => 'The Trust',
+          'url' => '/about/trust'
+        ],
+        [
           'title' => 'The Founder',
           'url' => '/about/founder'
         ],
@@ -40,15 +48,15 @@ return [
       ]
     ],
     [
-      'title' => 'Course Detail',
+      'title' => 'Academics',
       'links' => [
         [
           'title' => 'Courses Offered',
-          'url' => '/course/about'
+          'url' => '/academics/courses'
         ],
         [
           'title' => 'Admission',
-          'url' => '/course/admission'
+          'url' => '/academics/admission'
         ],
         [
           'title' => 'College App',
