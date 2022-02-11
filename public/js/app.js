@@ -21330,6 +21330,100 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js/ajax.js":
+/*!******************************!*\
+  !*** ./resources/js/ajax.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var Ajax = /*#__PURE__*/function () {
+  function Ajax(type, url) {
+    var data = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var datatype = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'json';
+
+    _classCallCheck(this, Ajax);
+
+    this.type = type;
+    this.url = url;
+    this.data = data;
+    this.datatype = datatype;
+
+    this.onSuccess = function () {};
+
+    this.onError = function () {};
+
+    this.beforeSend = function () {};
+  } //send ajax request
+
+
+  _createClass(Ajax, [{
+    key: "send",
+    value: function send() {
+      var _this = this;
+
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-TOKEN': $('input[name=_token]').val()
+        }
+      });
+      $.ajax({
+        type: this.type,
+        url: this.url,
+        data: this.data,
+        dataType: this.datatype,
+        beforeSend: function beforeSend(xhr) {
+          _this.beforeSend(xhr);
+        },
+        success: function success(response) {
+          _this.onSuccess(response);
+        },
+        error: function error(_error) {
+          // console.error("Ajax Error : ", error)
+          _this.onError(_error);
+        }
+      });
+    } //before send callback
+
+  }, {
+    key: "beforeSend",
+    value: function beforeSend(callback) {
+      if (callback) {
+        this.beforeSend = callback;
+      } else {
+        this.beforeSend = function () {};
+      }
+    } //set success callback
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(callback) {
+      this.onSuccess = callback;
+    } //set error callback
+
+  }, {
+    key: "onError",
+    value: function onError(callback) {
+      this.onError = callback;
+    }
+  }]);
+
+  return Ajax;
+}();
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (Ajax);
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -21341,6 +21435,7 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./custom */ "./resources/js/custom.js");
 /* harmony import */ var _filter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./filter */ "./resources/js/filter.js");
+/* harmony import */ var _ajax__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ajax */ "./resources/js/ajax.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
@@ -21358,6 +21453,8 @@ window.showMessage = _custom__WEBPACK_IMPORTED_MODULE_0__["showMessage"];
 
 
 window.FilterPanel = new _filter__WEBPACK_IMPORTED_MODULE_1__["default"]();
+
+window.Ajax = _ajax__WEBPACK_IMPORTED_MODULE_2__["default"];
 /**
  * Check whether client browser is mobile or desktop
  * 

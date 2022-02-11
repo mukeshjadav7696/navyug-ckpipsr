@@ -15,7 +15,7 @@
                         @php
                             extract($subLink); // extracts $url and $title
                         @endphp
-                        @if (Str::contains($url, '://'))
+                        @if (Str::contains($url, '://') && !Str::contains($url, config('app.url')))
                             {{-- External --}}
                             <a class="navbar-item" href="{{ $url }}" target="_blank">
                                 {{ $title }}
@@ -35,7 +35,7 @@
         @php
             extract($mainNav); // extracts $url, $title and $icon (optional)
         @endphp
-        @if (Str::contains($url, '://'))
+        @if (Str::contains($url, '://') && !Str::contains($url, config('app.url')))
             {{-- External --}}
             @if (isset($icon))
                 <a class="navbar-item has-tooltip-arrow has-tooltip-bottom" href="{{ $url }}" target="_blank"

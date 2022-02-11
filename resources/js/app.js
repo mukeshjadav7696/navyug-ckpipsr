@@ -14,6 +14,9 @@ window.showMessage = showMessage
 import Filter from "./filter"
 window.FilterPanel = new Filter()
 
+import Ajax from './ajax'
+window.Ajax = Ajax
+
 /**
  * Check whether client browser is mobile or desktop
  * 

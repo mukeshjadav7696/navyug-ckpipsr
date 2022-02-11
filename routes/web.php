@@ -4,6 +4,8 @@ use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\StaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,20 @@ use App\Http\Controllers\AcademicsController;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('staff')
+  ->name('staff.')
+  ->group(function () {
+    Route::get('/info/{staffId}', [StaffController::class, 'info'])->name('info');
+    Route::get('/list/{type}', [StaffController::class, 'index'])->name('index');
+  });
+
+Route::prefix('departments')
+  ->name('departments.')
+  ->group(function () {
+    Route::get('index', [DepartmentController::class, 'index'])->name('index');
+    Route::get('info/{slug}', [DepartmentController::class, 'info'])->name('info');
+  });
 
 Route::prefix('about')
   ->name('about.')

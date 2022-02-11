@@ -47,7 +47,7 @@ class HomePageController extends Controller
     $parameters = [
       'is_home' => true,
     ];
-    $photos = APIHelper::getData(APIEndpoints::GET_PHOTOS, $parameters);
+    $photos = APIHelper::getLiveCollection(APIEndpoints::GET_PHOTOS, $parameters);
 
     //get announcements
     $parameters = [
@@ -55,7 +55,7 @@ class HomePageController extends Controller
       'type' => 'ANNOUNCEMENT',
       'date_format' => 'd-m'
     ];
-    $announcements = APIHelper::getData(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
+    $announcements = APIHelper::getLiveCollection(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
 
     //get news
     $parameters = [
@@ -63,20 +63,20 @@ class HomePageController extends Controller
       'type' => 'NOTICE',
       'date_format' => 'd-m'
     ];
-    $notices = APIHelper::getData(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
+    $notices = APIHelper::getLiveCollection(APIEndpoints::GET_ANNOUNCEMENTS, $parameters);
 
     //get events
     $parameters = [
       'is_home' => true,
     ];
-    $events = APIHelper::getData(APIEndpoints::GET_EVENTS, $parameters);
+    $events = APIHelper::getLiveCollection(APIEndpoints::GET_EVENTS, $parameters);
 
     //get events
     $parameters = [
       'is_home' => true,
       'date_format' => 'M d, y'
     ];
-    $achievements = APIHelper::getData(APIEndpoints::GET_ACHIEVEMENTS, $parameters);
+    $achievements = APIHelper::getLiveCollection(APIEndpoints::GET_ACHIEVEMENTS, $parameters);
 
     return [$photos, $announcements, $notices, $events, $achievements];
   }

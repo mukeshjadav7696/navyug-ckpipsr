@@ -59,6 +59,10 @@ return [
           'url' => '/academics/admission'
         ],
         [
+          'title' => 'Departments',
+          'url' => '/departments/index'
+        ],
+        [
           'title' => 'College App',
           'url' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce'
         ],
@@ -66,6 +70,19 @@ return [
           'title' => 'VNSGU Admission',
           'url' => 'https://admission.vnsgu.net/'
         ]
+      ]
+    ],
+    [
+      'title' => 'Staff',
+      'links' => [
+        [
+          'title' => 'Faculties',
+          'url' => '/staff/list/teaching'
+        ],
+        [
+          'title' => 'Administrative',
+          'url' => '/staff/list/non-teaching'
+        ],
       ]
     ]
   ],

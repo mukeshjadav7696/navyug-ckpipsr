@@ -44,17 +44,7 @@
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <?php
-        $navigationDetail = config('navigation');
-        ?>
-        <div id="main-navbar" class="navbar-menu">
-            <div class="navbar-start">
-                @include('layouts.elements.nav', ['navigations' => $navigationDetail['left']])
-            </div>
-            <div class="navbar-end">
-                @include('layouts.elements.nav', ['navigations' => $navigationDetail['right']])
-            </div>
-        </div>
+        @include('layouts.elements.navbar')
     </div>
 </nav>
 <script>

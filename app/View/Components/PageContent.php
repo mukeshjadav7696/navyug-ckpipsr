@@ -7,15 +7,18 @@ use Illuminate\View\Component;
 class PageContent extends Component
 {
 
+  public $padding;
+
   /**
    * Create a new component instance.
    *
    * @param array $breadcrumbs
    * @return void
    */
-  public function __construct()
+  public function __construct($padding = true)
   {
     //
+    $this->padding = $padding;
   }
 
   /**
