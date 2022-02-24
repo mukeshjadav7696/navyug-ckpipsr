@@ -88,6 +88,15 @@ return [
   ],
 
   'right' => [
+    'galary' => [
+      'title' => 'Galary',
+      'links' => [
+        [
+          'title' => 'Photo Galary',
+          'url' => '/resources/photo-gallery'
+        ]
+      ]
+    ],
     'scholorship' => [
       'title' => 'Scholorship',
       'links' => [

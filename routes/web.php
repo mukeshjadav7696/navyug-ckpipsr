@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
 
 /*
@@ -20,6 +21,12 @@ use App\Http\Controllers\StaffController;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('resources')
+  ->name('resources.')
+  ->group(function () {
+    Route::get('/photo-gallery', [ResourceController::class, 'photoGallery'])->name('photo-gallery');
+  });
 
 Route::prefix('staff')
   ->name('staff.')

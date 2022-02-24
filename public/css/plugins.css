@@ -321,3 +321,35 @@
   cursor: not-allowed;
 }
 
+.is-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  grid-auto-rows: 128px;
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+}
+
+.is-photo-grid div {
+  display: flex;
+}
+
+.is-photo-grid img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.is-photo-grid .horizontal {
+  grid-column: span 2;
+}
+
+.is-photo-grid .vertical {
+  grid-row: span 2;
+}
+
+.is-photo-grid .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
