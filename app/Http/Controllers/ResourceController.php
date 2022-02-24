@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class ResourceController extends Controller
 {
   /**
-   * Display the list of staff members
+   * Show photo gallery page
    *
    * @return \Illuminate\View\View
    */

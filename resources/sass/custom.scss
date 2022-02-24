@@ -103,3 +103,11 @@ a {
 .is-darken {
     filter: brightness(50%);
 }
+
+.message {
+    .message-body {
+        &.has-border-top {
+            border-width: 4px 0 0 0;
+        }
+    }
+}

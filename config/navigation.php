@@ -89,8 +89,12 @@ return [
 
   'right' => [
     'galary' => [
-      'title' => 'Galary',
+      'title' => 'Activities',
       'links' => [
+        [
+          'title' => 'Events',
+          'url' => '/activities/events'
+        ],
         [
           'title' => 'Photo Galary',
           'url' => '/resources/photo-gallery'
