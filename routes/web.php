@@ -26,6 +26,11 @@ Route::get('/welcome', [HomePageController::class, 'welcome']);
 Route::prefix('activities')
   ->name('activities.')
   ->group(function () {
+    //achievements
+    Route::get('/achievements/{achievementTypeId}', [ActivityController::class, 'typeAchievements'])->name('achievements.type');
+    Route::get('/achievements', [ActivityController::class, 'achievements'])->name('achievements');
+
+    //events
     Route::get('/events/{eventTypeId}', [ActivityController::class, 'typeEvents'])->name('events.type');
     Route::get('/events', [ActivityController::class, 'events'])->name('events');
   });

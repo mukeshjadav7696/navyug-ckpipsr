@@ -44,9 +44,19 @@
                 <span class="tag is-info">{{ $event->duration }}</span>
             </span>
         </div>
-        <div class="buttons">
+        <div class="mt-5">
             @foreach ($event->links as $label => $url)
-                <a class="button is-primary is-outlined" href="{{ $url }}">{{ $label }}</a>
+                @if (!$loop->first)
+                    <span class="has-text-grey mx-2">
+                        &bullet;
+                    </span>
+                @endif
+                <a class="is-primary is-outlined" href="{{ $url }}">
+                    <span class="icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>{{ $label }}</span>
+                </a>
             @endforeach
         </div>
     </div>

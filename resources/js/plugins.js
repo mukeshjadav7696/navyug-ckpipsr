@@ -11,6 +11,7 @@ try {
   window.$ = require('jquery/dist/jquery.min.js');
   window.toast = require('bulma-toast').toast;
   window.bulmaCalendar = require('bulma-calendar');
+  window.bulmaCollapsible = require('@creativebulma/bulma-collapsible')
   window.bulmaTagsinput = require('@creativebulma/bulma-tagsinput/dist/js/bulma-tagsinput.min.js');
   window.bulmaQuickview = require('bulma-quickview/dist/js/bulma-quickview.min.js');
   window.Cropper = require('cropperjs')

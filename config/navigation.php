@@ -92,6 +92,10 @@ return [
       'title' => 'Activities',
       'links' => [
         [
+          'title' => 'Achievements',
+          'url' => '/activities/achievements'
+        ],
+        [
           'title' => 'Events',
           'url' => '/activities/events'
         ],

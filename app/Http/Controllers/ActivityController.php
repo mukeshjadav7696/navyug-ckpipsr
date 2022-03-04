@@ -12,6 +12,49 @@ class ActivityController extends Controller
   /**
    * Display the list of staff members
    * 
+   * @param int $achievementTypeId
+   *
+   * @return \Illuminate\View\View
+   */
+  public function typeAchievements($achievementTypeId)
+  {
+    //get achievements from first type
+    $parameters = [
+      'achievement_type_id' => $achievementTypeId
+    ];
+    $achievements = APIHelper::getLiveCollection(APIEndpoints::GET_ACHIEVEMENTS, $parameters);
+
+    $content = view('activities.achievements.list', compact('achievements'))->render();
+
+    return response()->json([
+      'content' => $content
+    ]);
+  }
+  /**
+   * Display the list of achievements with types
+   *
+   * @return \Illuminate\View\View
+   */
+  public function achievements()
+  {
+    //get photos
+    $achievementTypes = APIHelper::getCachedData(APIEndpoints::MASTER_ACHIEVEMENT_TYPES);
+
+    //sort achievement types by names
+    $achievementTypes = $achievementTypes->sort();
+
+    //get achievements from first type
+    $parameters = [
+      'achievement_type_id' => $achievementTypes->keys()->first()
+    ];
+    $achievements = APIHelper::getLiveCollection(APIEndpoints::GET_ACHIEVEMENTS, $parameters);
+
+    return view('activities.achievements.index', compact('achievementTypes', 'achievements'));
+  }
+
+  /**
+   * Display the list of staff members
+   * 
    * @param int $eventTypeId
    *
    * @return \Illuminate\View\View

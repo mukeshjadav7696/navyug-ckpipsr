@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@creativebulma/bulma-collapsible": "^1.0.4",
         "@creativebulma/bulma-divider": "^1.1.0",
         "@creativebulma/bulma-tagsinput": "^1.0.3",
         "@creativebulma/bulma-tooltip": "^1.2.0",

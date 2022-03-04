@@ -17,6 +17,9 @@ export class Custom {
     //bulma quick view
     bulmaQuickview.attach();
 
+    //bulma collapsible
+    bulmaCollapsible.attach('.is-collapsible');
+
     //initialize modal actions
     this.initModalActions();
   }

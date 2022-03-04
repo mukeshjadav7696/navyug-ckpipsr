@@ -21537,7 +21537,9 @@ var Custom = /*#__PURE__*/_createClass(function Custom() {
 
     bulmaTagsinput.attach(); //bulma quick view
 
-    bulmaQuickview.attach(); //initialize modal actions
+    bulmaQuickview.attach(); //bulma collapsible
+
+    bulmaCollapsible.attach('.is-collapsible'); //initialize modal actions
 
     _this.initModalActions();
   });
