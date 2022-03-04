@@ -88,26 +88,18 @@ return [
   ],
 
   'right' => [
-    'galary' => [
-      'title' => 'Activities',
+    'students' => [
+      'title' => 'Students',
       'links' => [
         [
-          'title' => 'Achievements',
-          'url' => '/activities/achievements'
+          'title' => 'Notice Board',
+          'url' => '/announcements/notice'
         ],
         [
-          'title' => 'Events',
-          'url' => '/activities/events'
+          'title' => 'Documents',
+          'url' => '/documents'
         ],
-        [
-          'title' => 'Photo Galary',
-          'url' => '/resources/photo-gallery'
-        ]
-      ]
-    ],
-    'scholorship' => [
-      'title' => 'Scholorship',
-      'links' => [
+        [],
         [
           'title' => 'Digital Gujarat',
           'url' => 'https://www.digitalgujarat.gov.in/'
@@ -118,10 +110,32 @@ return [
         ]
       ]
     ],
-    'downloads' => [
-      'title' => 'Downloads',
-      'url' => '/documents',
-      'icon' => 'fas fa-server'
+    'resources' => [
+      'title' => 'Resources',
+      'links' => [
+        [
+          'title' => 'Photo Galary',
+          'url' => '/resources/photo-gallery'
+        ]
+      ]
+    ],
+    'activities' => [
+      'title' => 'Activities',
+      'links' => [
+        [
+          'title' => 'Achievements',
+          'url' => '/activities/achievements'
+        ],
+        [
+          'title' => 'Events',
+          'url' => '/activities/events'
+        ],
+      ]
+    ],
+    'announcements' => [
+      'title' => 'Announcements',
+      'url' => '/announcements/announcement',
+      'icon' => 'fas fa-bullhorn'
     ],
     'mobile_app' => [
       'title' => 'College App',

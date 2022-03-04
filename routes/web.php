@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ResourceController;
@@ -26,6 +27,13 @@ use function Ramsey\Uuid\v1;
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
 
+Route::prefix('announcements')
+  ->name('announcements.')
+  ->group(function () {
+
+    //get list of documnets
+    Route::get('/{type}', [AnnouncementController::class, 'index'])->name('index');
+  });
 
 Route::prefix('documents')
   ->name('documents.')
