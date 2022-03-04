@@ -21045,6 +21045,59 @@ a.is-link {
   border-width: 4px 0 0 0;
 }
 
+.is-grid {
+  display: grid;
+  gap: 5px;
+}
+
+.is-grid.is-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.is-grid.is-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.is-grid.is-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.is-grid.is-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.is-grid.is-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.is-grid.is-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.is-grid.is-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.is-grid.is-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.is-grid.is-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.is-grid.is-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.is-grid.is-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.is-grid.is-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .tag.is-secondary {
   background-color: #EBFFFC;
   color: #00b89c;

@@ -58,6 +58,7 @@ Route::prefix('activities')
 Route::prefix('resources')
   ->name('resources.')
   ->group(function () {
+    Route::get('/laboratories', [ResourceController::class, 'laboratories'])->name('laboratories');
     Route::get('/photo-gallery', [ResourceController::class, 'photoGallery'])->name('photo-gallery');
   });
 

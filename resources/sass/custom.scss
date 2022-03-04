@@ -119,3 +119,16 @@ a {
         }
     }
 }
+
+
+.is-grid {
+
+    display: grid;
+    gap: 5px;
+
+    @for $i from 1 through 12 {
+        &.is-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+        }
+    }
+}

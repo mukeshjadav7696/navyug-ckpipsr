@@ -114,6 +114,10 @@ return [
       'title' => 'Resources',
       'links' => [
         [
+          'title' => 'Laboratories',
+          'url' => '/resources/laboratories'
+        ],
+        [
           'title' => 'Photo Galary',
           'url' => '/resources/photo-gallery'
         ]

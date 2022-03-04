@@ -8,6 +8,20 @@ use Illuminate\Support\Str;
 
 class ResourceController extends Controller
 {
+
+  /**
+   * Show laboratories page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function laboratories()
+  {
+    //get photos
+    $laboratories = APIHelper::getLiveCollection(APIEndpoints::GET_LABS);
+
+    return view('resources.laboratories.index', compact('laboratories'));
+  }
+
   /**
    * Show photo gallery page
    *
@@ -18,6 +32,6 @@ class ResourceController extends Controller
     //get photos
     $photos = APIHelper::getLiveCollection(APIEndpoints::GET_PHOTOS);
 
-    return view('resources.photo_gallery', compact('photos'));
+    return view('resources.photos.index', compact('photos'));
   }
 }
