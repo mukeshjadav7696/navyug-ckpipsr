@@ -21025,6 +21025,14 @@ a.is-link {
   font-size: 0.6em;
 }
 
+.tags.are-marginless {
+  margin-bottom: 0;
+}
+
+.tags.are-marginless .tag {
+  margin-bottom: 0;
+}
+
 .is-lighten {
   filter: brightness(70%);
 }

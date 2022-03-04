@@ -6,8 +6,11 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
+
+use function Ramsey\Uuid\v1;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +25,15 @@ use App\Http\Controllers\StaffController;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+
+Route::prefix('documents')
+  ->name('documents.')
+  ->group(function () {
+
+    //get list of documnets
+    Route::get('/', [DocumentController::class, 'index'])->name('index');
+  });
 
 Route::prefix('activities')
   ->name('activities.')

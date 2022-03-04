@@ -118,6 +118,11 @@ return [
         ]
       ]
     ],
+    'downloads' => [
+      'title' => 'Downloads',
+      'url' => '/documents',
+      'icon' => 'fas fa-server'
+    ],
     'mobile_app' => [
       'title' => 'College App',
       'url' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',

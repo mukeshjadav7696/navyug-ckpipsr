@@ -94,6 +94,14 @@ a {
             font-size: 0.6em;
         }
     }
+
+    &.are-marginless {
+        margin-bottom: 0;
+
+        .tag {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .is-lighten {

@@ -5,24 +5,23 @@
         <x-page-content :padding="false">
             <div class="columns">
                 <div class="column is-2">
-                    <div class="list has-hoverable-list-items has-visible-pointer-controls">
-                        @foreach ($achievementTypes as $typeId => $typeName)
-                            <div class="list-item">
-                                <div class="list-item-content">
-                                    <div class="list-item-title">{{ $typeName }}</div>
-                                </div>
-                                <div class="list-item-controls">
-                                    <div class="buttons">
-                                        <a class="button is-dark is-inverted fetch-achievements" href="#"
-                                            data-id="{{ $typeId }}">
+                    <div class="panel has-background-light">
+                        <div class="list has-visible-pointer-controls">
+                            @foreach ($achievementTypes as $typeId => $typeName)
+                                <div class="list-item">
+                                    <div class="list-item-content">
+                                        <div class="list-item-title">{{ $typeName }}</div>
+                                    </div>
+                                    <div class="list-item-controls">
+                                        <a class="fetch-achievements" href="#" data-id="{{ $typeId }}">
                                             <span class="icon">
                                                 <i class="fas fa-arrow-alt-circle-right has-text-primary"></i>
                                             </span>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
                 <div class="column">
