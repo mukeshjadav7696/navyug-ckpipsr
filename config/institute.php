@@ -17,37 +17,40 @@ return [
   ],
 
   'info' => [
-    'id' => 102,
-    'code' => 'b02ae91a-dc71-4f27-895c-d38e8145f502',
-    'name' => 'Navyug Commerce College',
-    'short_name' => 'NCC',
-    'vision' => 'The act of taking the first step is what separates the winners from the losers.',
-    'mission' => [
-      'M1' => 'Life is trying things to see if they work.',
-      'M2' => 'Whatever you do in life, surround yourself with smart people who\'ll argue with you.',
-      'M3' => 'Life is about choice. You can choose to be a victim or anything else you like to be.',
+    "id" => 102,
+    "code" => "56ea70e8-0746-405e-b77a-5ea8a4d2d925",
+    "name" => "C. K. Pithawala Institute of Pharmaceutical Science & Research",
+    "short_name" => "CKPIPSR",
+    "vision" => "Committed to promote high quality education, training and research in pharmacy to meet the needs of tomorrow’s healthy society.",
+    "mission" => [
+      "M1" => "To create an arena of the highest quality professional pharmacy education at all levels, to produce competent pharmacists with innovative skills",
+      "M2" => "To establish Continuing Professional Development (CPD) program in the institution for practicing professionals to undertake the national task of education and research.",
+      "M3" => "To strengthen the industry – institution interaction to explore, substantiate and integrate native medicinal knowledge with modern pharmaceutical technology.",
+      "M4" => "To create a model pharmacy in the institution to strengthen the relation between public and pharmacy.",
+      "M5" => "To provide excellent work environment and to promote technical Superiority.",
+      "M6" => "To collaborate with national and international organizations for Outstanding educational / services / research programs."
     ],
-    'description' => 'About the Navyug Commerece College',
-    "address" => "Navyug Commerce College, \r\nMoraraji Desai Shaikshanik Sankul,\r\nRander Road,\r\nSurat - 395009",
-    "email" => "navyug70@yahooo.com",
-    "mobile" => "9409260278",
+    "description" => "C.K Pithawalla Institute Of Pharmaceutical Science & Research was founded in 2005 and is being managed by the Navyug Vidyabhavan Trust which was founded in February, 1965.\r\n\r\nWithin a short span of its operation, the college has provided all the necessary facilities to help the students which includes a well eastablished library containing a large number of books, reference books, technical & general magazines.\r\n\r\nHonourable late Shri C.K. Pithawalla has been the driving force for the setting up of this college named after him and is continually drawing inspiration from him. This institute of learning in particular, like many others, owes a great deal to his vision, understanding and missionary zeal right from its inception to its bloassoming.",
+    "address" => "Opposite Surat Airport,\r\nBehind DPS School,\r\nNear Malvan Mandir,\r\nDumas Road, Surat - 395007.",
+    "email" => "ckpipsr@gmail.com",
+    "mobile" => "6355065636",
     "other_emails" => [
-      "info@navyug.com"
+      "ckpipsrprincipal@gmail.com"
     ],
     "other_contact_nos" => [
-      "(0261) 2784102"
+      "9099063116"
     ],
-    'location' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.7709963599336!2d72.79867111466449!3d21.201254287243742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c259c256fd9%3A0x616cb135b5f5b88d!2sNavyug%20Science%20College!5e0!3m2!1sen!2sin!4v1632233073846!5m2!1sen!2sin',
-    'facebook' => 'https://www.facebook.com/ckpcollege',
-    'linkedin' => 'https://www.linkedin.com/in/ckpcollege',
-    'twitter' => NULL,
-    'instagram' => 'https://www.instagram.com/ckpcollege',
-    'telegram' => 'https://www.youtube.com/ckpcollege',
-    'youtube' => 'https://www.youtube.com/ckpcollege',
-    'whatsapp' => NULL,
-    'timings' => '10:30 AM to 05:30 PM',
-    'website' => 'http://www.navyugcommerce.com',
-    'logo' => 'https://navyug-app-bucket.s3.ap-south-1.amazonaws.com/app/institutes/102/images/logo/61d8204536425.webp',
+    "location" => null,
+    "timings" => "9:30 AM to 5:10 PM",
+    "facebook" => "https://www.facebook.com/profile.php?id=100069960302545",
+    "linkedin" => "https://www.linkedin.com/school/c.k.pithawala-institute-of-pharmaceutical-science-research-surat-216/about/",
+    "twitter" => null,
+    "instagram" => "https://www.instagram.com/ckpipsr",
+    "telegram" => "https://t.me/joinchat/aBJZdVV41Sw5M2U1",
+    "whatsapp" => "https://api.whatsapp.com/send?phone=919427474602",
+    "youtube" => null,
+    "website" => "https://ckpipsr.ac.in",
+    "logo" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/images/logo/6222e8f1903b9.webp",
   ]
 
 ];
