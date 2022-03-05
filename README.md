@@ -1,4 +1,4 @@
-# Websited for Navyug Vidyabhavan Trust
+# Website for C. K. Pithawala Institute of Pharmaceutical Science & Research
 
 ### System Requirements
 
