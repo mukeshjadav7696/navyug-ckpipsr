@@ -50,7 +50,7 @@ return [
     "whatsapp" => "https://api.whatsapp.com/send?phone=919427474602",
     "youtube" => null,
     "website" => "https://ckpipsr.ac.in",
-    "logo" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/images/logo/6222e8f1903b9.webp",
+    "logo" => "https://console.navyugtrust.org/institute/102/logo",
   ]
 
 ];
