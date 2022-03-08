@@ -17,12 +17,12 @@
                         @endphp
                         @if (Str::contains($url, '://') && !Str::contains($url, config('app.url')))
                             {{-- External --}}
-                            <a class="navbar-item" href="{{ $url }}" target="_blank">
+                            <a class="navbar-item has-text-weight-bold" href="{{ $url }}" target="_blank">
                                 {{ $title }}
                             </a>
                         @else
                             {{-- Internal --}}
-                            <a class="navbar-item" href="{{ url($url) }}">
+                            <a class="navbar-item has-text-weight-bold" href="{{ url($url) }}">
                                 {{ $title }}
                             </a>
                         @endif

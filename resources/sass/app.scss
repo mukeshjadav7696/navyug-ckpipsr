@@ -5,10 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
 
 // Set your brand colors
-$kepple : #00b89c;
-$kepple-light: #EBFFFC;
-$primary : $kepple;
-$secondary : $kepple-light;
+$primary : #B1635B;
+$primary-light: #EBD7D6;
+$secondary : #F8F2F1;
 
 // Update Bulma's global variables
 $body-background-color: $secondary;
@@ -25,6 +24,7 @@ $box-radius:3px;
 $box-padding: 1.5rem;
 $navbar-height: 4rem;
 $navbar-padding-vertical: 1.2rem;
+$navbar-dropdown-background-color: $primary-light;
 
 @import "~bulma/bulma.sass";
 
@@ -66,4 +66,10 @@ Custom
 
 .has-text-secondary {
     color: $primary;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-dropdown {
+        box-shadow: 0 3px 10px rgba(10, 10, 10, 0.25);
+    }
 }
