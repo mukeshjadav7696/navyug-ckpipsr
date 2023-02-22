@@ -23,4 +23,14 @@ class AcademicsController extends Controller
   {
     return view('academics.admission');
   }
+
+  /**
+   * Display the approval view
+   *
+   * @return \Illuminate\View\View
+   */
+  public function approvals()
+  {
+    return view('academics.approvals');
+  }
 }

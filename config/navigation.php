@@ -59,17 +59,13 @@ return [
           'url' => '/academics/admission'
         ],
         [
+          'title' => 'Approvals',
+          'url' => '/academics/approvals'
+        ],
+        [
           'title' => 'Departments',
           'url' => '/departments/index'
         ],
-        [
-          'title' => 'College App',
-          'url' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce'
-        ],
-        [
-          'title' => 'VNSGU Admission',
-          'url' => 'https://admission.vnsgu.net/'
-        ]
       ]
     ],
     [
@@ -163,10 +159,9 @@ return [
       'College App' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
     ],
     'links' => [
+      'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',
       'Digital Gujarat' => 'https://www.digitalgujarat.gov.in/',
       'National Scholorship' => 'https://scholarships.gov.in/',
-      'Digital Gujarat' => 'https://www.digitalgujarat.gov.in/',
-      'National Scholorship' => 'https://scholarships.gov.in/'
     ],
     'newletters' => [
       'The Founder' => '/about/founder',
