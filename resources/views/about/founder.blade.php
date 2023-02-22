@@ -13,7 +13,7 @@
                     </p>
                 </div>
                 <div class="column">
-                    <div class="content has-text-justified is-medium">
+                    <div class="content has-text-justified">
                         <p>
                             Late Shree C. K. Pithawala had been the driving force for the setting up of the Navyug
                             Vidyabhavan Trust and continuously drawing inspiration from him.

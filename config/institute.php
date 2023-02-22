@@ -40,7 +40,7 @@ return [
     "other_contact_nos" => [
       "9099063116"
     ],
-    "location" => null,
+    "location" => "https://goo.gl/maps/MBLyJ82ujrbZfJFfA",
     "timings" => "9:30 AM to 5:10 PM",
     "facebook" => "https://www.facebook.com/profile.php?id=100069960302545",
     "linkedin" => "https://www.linkedin.com/school/c.k.pithawala-institute-of-pharmaceutical-science-research-surat-216/about/",

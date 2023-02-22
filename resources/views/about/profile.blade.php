@@ -4,49 +4,111 @@
 
         <x-page-content>
             <div class="content has-text-justified">
-                <p>
-                    Navyug Vidyabhavan Trust came into existence in the year 1965 as a brain child of Late Prin. Dr.
-                    D. G. Vashi, an eminent educationist and visionary.
-                </p>
-                <p>
-                    In those days, the institutes of higher education in various disciplines managed by the
-                    Sarvajanik Education Society were pocketed on the eastern bank of the river Tapti and the areas
-                    on the opposite side of the river were not fully developed. The students of this area and those
-                    residing in the nearby villages found it difficult to commute everyday to reach their respective
-                    colleges as the means of trasport were scant.
-                </p>
-                <p>
-                    Late Prin. Dr. D. G. Vashi, then a professor of Statistics at Bilimora College, foresaw the need
-                    of an institute of the higher education in this area. He was neither rich nor influential,
-                    politically or otherwise, but had a strong sense of self-conviction. He succeeded in
-                    materializing his dream into reality and started Arts and Science College in this campus
-                    situated on Rander Road, surat. in the year 1966 with a meagre strength of 300 students.
-                </p>
-                <p>
-                    The Navyug Vidyabhavan Trust was registered under Bombay Public Trust Act 1950 as a Public
-                    Eduction Trust on 21 February 1965. Two separate buildings for arts and science faculties were
-                    built on approximetely 20000sq. ft. land area. As South Gujarat University ( now Veer Narmad
-                    South Gujarat University) was non-existent at that time, the college was affiliated to the
-                    Gujarat University, Ahmedabad. Even though the Trust did not have adequate funds for the smooth
-                    running of the college, the Local Inquiry Committee of Late Chimanbhai Patel and Dr. Y. G. Naik
-                    recommended for affiliation to the Gujarat University looking at the noble cause of the Trust.
-                </p>
-                <p>
-                    The strength of students increased rapidly and the Trustees foresaw the need to open a separate
-                    faculty because of the growing requirement of the people of this area. After four years of its
-                    inception. Science College was bifurcated from Arts and became an independent unit and Dr. D. G.
-                    Vashi became the first Principal of Navyug Science College in 1970. At that time, the college
-                    was offering Graduation in Chemistry, Statitics and Post graduation in Statistics as well. In
-                    the year 1979, Shri. P. J. Sukharamwala took over as the Principal of the college. Due to
-                    financial crisis, the whole institution was handed over to eminent businessman and social
-                    worker, Shri. C. K. Pithawala in 1982. Since then the colleges of this campus have been managed
-                    by Shri. C. K. Pithawala and his associate trustees. In 1991. college got affiliation for
-                    starting Physics as the Principal Subject. In the year 1992, Dr. M. D. Ankhiwala took over the
-                    charge as the Principal of the college. During his tenure, the institution started a PG centre
-                    for Organic Chemistry in the year 1998. Dr. A. S. Patel became the Principal in the year 2004.
-                    Under his dynamic leadership, the college has grown from strength to strength and has carved out
-                    a niche for itself in the field of education.
-                </p>
+                <h2 class="subtitle is-3">Institute Profile</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        C.K Pithawalla Institute Of Pharmaceutical Science &amp; Research was founded in 2005 and is
+                        being managed by the Navyug Vidyabhavan Trust which was founded in February, 1965.
+                    </p>
+                    <p>
+                        Within a short span of its operation, the college has provided all the necessary facilities
+                        to help the students which includes a well eastablished library containing a large number of
+                        books, reference books, technical &amp; general magazines.
+                    </p>
+                    <p>
+                        Honourable late Shri C.K. Pithawalla has been the driving force for the setting up of this
+                        college named after him and is continually drawing inspiration from him. This institute of
+                        learning in particular, like many others, owes a great deal to his vision, understanding and
+                        missionary zeal right from its inception to its bloassoming.
+                    </p>
+                </div>
+                <h2 class="subtitle is-3">The City - Surat</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Surat is the most industrialized city in the state of Gujarat today. It is well known all
+                        over the world for its diamonds, jari and manmade textiles. Situated on the banks of the
+                        river Tapi, it is the fastest growing industrial city in the country. Besides this, it is
+                        also fast emerging as the source of dyes, chemicals and intermediates, textile machinery,
+                        plastic technology as well as agro-based industries. This attract skilled, semiskilled and
+                        unskilled workmen from all over the country.
+                    </p>
+                    <p>
+                        The pace of growth of the city accelerated during the past 60 years and Surat became a
+                        dominant center of commercial activity in South Gujarat. This in its wake brought some
+                        problemsalso, mainly in the field of higher education.
+                    </p>
+                </div>
+                <h2 class="subtitle is-3">The Navyug Vidyabhavan Trust</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        The demand for facilities of higher education grew rapidly. It
+                        was primarily to correct the imbalance between demand and
+                        supply that Navayug Vidyabhavan Trust was founded in February,
+                        1965. The aims and objectives of the Trust are to provide
+                        facilities for higher education to students without
+                        consideration of caste, community, sex or religion and to
+                        undertake research in the exact and social science.
+                    </p>
+                    <p>
+                        The trust was registered as Public Education Trust under the
+                        Bombay Public Trust ACT, 1950 and allotted registration No.
+                        1268. The truth also received exemption under section 80(G) of
+                        the Income-Tax Act for donations to it.
+                    </p>
+                    <p>
+                        Over 38 years old now, the Truth has in this long period,
+                        fulfilled that objective most honorably and is today
+                        recognized as an ideally managed educational organisation.
+                        While it has constantly undertaken a programme of expansion to
+                        meet the growing educational needs of the region, it has never
+                        compromised on quality.
+                    </p>
+                </div>
+                <h2 class="subtitle is-3">Other Institutes</h2>
+                <div class="content has-text-justified">
+                    <ol>
+                        <li>
+                            <a href="https://www.navyugartscollege.org/" target="__blank">
+                                <span>Navyug Arts College</span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://nscsurat.ac.in/" target="__blank">
+                                <span>Navyug Science College</span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.navyugcommerce.com/" target="__blank">
+                                <span>Navyug Commerce College</span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="__blank" class="disabled">
+                                <span>Maniben Pithawalla Industrial Training Institute</span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ckpcet.ac.in/" target="__blank">
+                                <span>C. K. Pithawalla College of Engineering &amp; Technology</span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </x-page-content>
     </x-slot>

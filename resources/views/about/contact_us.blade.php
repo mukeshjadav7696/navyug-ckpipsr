@@ -83,9 +83,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://goo.gl/maps/2ipcPSGCWmzcysv26" target="_blank"
-                    class="button is-info is-pulled-right">View Larger Map
-                </a>
+                <a href="https://goo.gl/maps/MBLyJ82ujrbZfJFfA" target="_blank"
+                    class="button is-info is-pulled-right">View Larger Map</a>
             </div>
         </x-page-content>
     </x-slot>
