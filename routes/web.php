@@ -10,6 +10,7 @@ use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\StudentsController;
 
 use function Ramsey\Uuid\v1;
 
@@ -26,6 +27,14 @@ use function Ramsey\Uuid\v1;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('students')
+  ->name('students.')
+  ->group(function () {
+    Route::get('/alumni', [StudentsController::class, 'alumni'])->name('alumni');
+    Route::get('/scholorships', [StudentsController::class, 'scholorships'])->name('scholorships');
+    Route::get('/timetables', [StudentsController::class, 'timetables'])->name('timetables');
+  });
 
 Route::prefix('announcements')
   ->name('announcements.')

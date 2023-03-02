@@ -11,6 +11,8 @@ export class Custom {
     })
     this.initDate();
 
+    this.initTabs();
+
     //bulma tags input
     bulmaTagsinput.attach();
 
@@ -22,6 +24,30 @@ export class Custom {
 
     //initialize modal actions
     this.initModalActions();
+  }
+
+  /**
+ * Initialize tabs view
+ */
+  initTabs = () => {
+    $('li.tab').on('click', function () {
+      const $this = $(this);
+      const $context = $this.closest('ul')
+      const contentPanel = $context.data('content')
+      if (contentPanel) {
+        //reset 
+        $('li.tab', $context).removeClass('is-active');
+        $(`#${contentPanel} > div.tab-content`).addClass('is-hidden');
+      } else {
+        $(`li.tab`).removeClass('is-active');
+        $(`div.tab-content`).addClass('is-hidden');
+      }
+
+      //show selected
+      $this.addClass('is-active');
+      const content = $this.data('content');
+      $(`#${content}`).removeClass('is-hidden');
+    })
   }
 
   initModalActions = () => {

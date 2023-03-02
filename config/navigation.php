@@ -47,7 +47,7 @@ return [
         ]
       ]
     ],
-    [
+    'academics' => [
       'title' => 'Academics',
       'links' => [
         [
@@ -68,7 +68,7 @@ return [
         ],
       ]
     ],
-    [
+    'staff' => [
       'title' => 'Staff',
       'links' => [
         [
@@ -80,29 +80,63 @@ return [
           'url' => '/staff/list/non-teaching'
         ],
       ]
-    ]
+    ],
+    'alumni' => [
+      'title' => 'Cells',
+      'links' => [
+        [
+          'title' => 'Laboratories',
+          'url' => '/resources/laboratories'
+        ],
+        [
+          'title' => 'Photo Galary',
+          'url' => '/resources/photo-gallery'
+        ]
+      ]
+    ],
   ],
 
   'right' => [
     'students' => [
-      'title' => 'Students',
+      'title' => 'Students Corner',
       'links' => [
+        [
+          'title' => 'Timetables',
+          'url' => '/students/timetables'
+        ],
+        [
+          'title' => 'Scholorships',
+          'url' => '/students/scholorships'
+        ],
         [
           'title' => 'Notice Board',
           'url' => '/announcements/notice'
         ],
         [
-          'title' => 'Documents',
-          'url' => '/documents'
+          'title' => 'Alumni',
+          'url' => '/students/alumni'
         ],
         [],
         [
-          'title' => 'Digital Gujarat',
-          'url' => 'https://www.digitalgujarat.gov.in/'
+          'title' => 'Academic Results',
+          'url' => 'https://www.gtu.ac.in/result.aspx'
         ],
         [
-          'title' => 'National Scholorship',
-          'url' => 'https://scholarships.gov.in/'
+          'title' => 'Documents',
+          'url' => '/documents'
+        ],
+      ]
+    ],
+    'tandp' => [
+      'title' => 'T&P',
+      'links' => [
+        [
+          'title' => 'Laboratories',
+          'url' => '/resources/laboratories'
+        ],
+        [
+          'title' => 'Photo Galary',
+          'url' => '/resources/photo-gallery'
         ]
       ]
     ],
@@ -137,11 +171,6 @@ return [
       'url' => '/announcements/announcement',
       'icon' => 'fas fa-bullhorn'
     ],
-    'mobile_app' => [
-      'title' => 'College App',
-      'url' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
-      'icon' => 'fab fa-google-play'
-    ],
     'contact' => [
       'title' => 'Contact Us',
       'url' => '/about/contact-us',
@@ -165,7 +194,6 @@ return [
     ],
     'newletters' => [
       'The Founder' => '/about/founder',
-      'College App' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
     ],
   ],
 ];

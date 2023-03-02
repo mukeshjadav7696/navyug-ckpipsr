@@ -1,11 +1,11 @@
 /*!
- * Cropper.js v1.5.12
+ * Cropper.js v1.5.13
  * https://fengyuanchen.github.io/cropperjs
  *
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2021-06-12T08:00:17.411Z
+ * Date: 2022-11-20T05:30:46.114Z
  */
 
 /*!
@@ -21,9 +21,9 @@
  */
 
 /*!
- * bulma-toast 2.4.1 
+ * bulma-toast 2.4.2 
  * (c) 2018-present @rfoel <rafaelfr@outlook.com> 
  * Released under the MIT License.
  */
 
-/*! jQuery v3.6.0 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+/*! jQuery v3.6.3 | (c) OpenJS Foundation and other contributors | jquery.org/license */

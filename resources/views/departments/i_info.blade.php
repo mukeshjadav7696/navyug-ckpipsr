@@ -34,19 +34,21 @@
                     </div>
                 </div>
             </div>
-            <div class="tile is-parent">
-                <div class="tile is-child content">
-                    <p class="heading">Vision</p>
-                    <blockquote>
-                        {{ $department->vision }}
-                    </blockquote>
+            @if ($department->vision)
+                <div class="tile is-parent">
+                    <div class="tile is-child content">
+                        <p class="heading">Vision</p>
+                        <blockquote>
+                            {{ $department->vision }}
+                        </blockquote>
+                    </div>
                 </div>
-            </div>
-            <div class="tile is-parent">
-                <div class="tile is-child">
-                    <p class="heading">Mission</p>
-                    <div class="list has-visible-pointer-controls">
-                        @if ($department->mission)
+            @endif
+            @if ($department->mission)
+                <div class="tile is-parent">
+                    <div class="tile is-child">
+                        <p class="heading">Mission</p>
+                        <div class="list has-visible-pointer-controls">
                             @foreach ($department->mission as $key => $statement)
                                 <div class="list-item">
                                     <div class="list-item-content">
@@ -59,10 +61,10 @@
                                     </div>
                                 </div>
                             @endforeach
-                        @endif
+                        </div>
                     </div>
                 </div>
-            </div>
+            @endif
         </div>
     </div>
     @if ($department->pso || $department->peo)
