@@ -6,13 +6,12 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\CellsController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudentsController;
-
-use function Ramsey\Uuid\v1;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +26,19 @@ use function Ramsey\Uuid\v1;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('cells')
+  ->name('cells.')
+  ->group(function () {
+    Route::get('/iqac', [CellsController::class, 'iqac'])->name('iqac');
+    Route::get('/grc', [CellsController::class, 'grc'])->name('grc');
+    Route::get('/arc', [CellsController::class, 'arc'])->name('arc');
+    Route::get('/wdc', [CellsController::class, 'wdc'])->name('wdc');
+    Route::get('/gsc', [CellsController::class, 'gsc'])->name('gsc');
+    Route::get('/adc', [CellsController::class, 'adc'])->name('adc');
+    Route::get('/scst', [CellsController::class, 'scst'])->name('scst');
+    Route::get('/cpc', [CellsController::class, 'cpc'])->name('cpc');
+  });
 
 Route::prefix('students')
   ->name('students.')

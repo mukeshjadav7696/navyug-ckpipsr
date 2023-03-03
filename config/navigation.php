@@ -85,13 +85,37 @@ return [
       'title' => 'Cells',
       'links' => [
         [
-          'title' => 'Laboratories',
-          'url' => '/resources/laboratories'
+          'title' => 'Internal Quality Assurance Cell',
+          'url' => '/cells/iqac'
         ],
         [
-          'title' => 'Photo Galary',
-          'url' => '/resources/photo-gallery'
-        ]
+          'title' => 'Grievance Redressal Cell',
+          'url' => '/cells/grc'
+        ],
+        [
+          'title' => 'Anti Ragging Committee',
+          'url' => '/cells/arc'
+        ],
+        [
+          'title' => 'Women Development Cell',
+          'url' => '/cells/wdc'
+        ],
+        [
+          'title' => 'Gender Sensitization Cell',
+          'url' => '/cells/gsc'
+        ],
+        [
+          'title' => 'Anti-Discrimination Cell',
+          'url' => '/cells/adc'
+        ],
+        [
+          'title' => 'SC-ST Cell',
+          'url' => '/cells/scst'
+        ],
+        [
+          'title' => 'Career and Placement Cell',
+          'url' => '/cells/cpc'
+        ],
       ]
     ],
   ],
