@@ -4,7 +4,7 @@
 
         <x-page-content :padding="false">
             <div class="columns">
-                <div class="column is-2">
+                <div class="column is-4">
                     <div class="panel has-background-light">
                         <div class="list has-visible-pointer-controls">
                             @foreach ($laboratories as $lab)
@@ -13,7 +13,7 @@
                                 @endphp
                                 <div class="list-item">
                                     <div class="list-item-content">
-                                        <div class="list-item-title">{{ $lab->lab_no }}</div>
+                                        <div class="list-item-title">{{ $lab->name }}</div>
                                     </div>
                                     <div class="list-item-controls">
                                         <a class="get-lab" href="#" data-target="{{ $labId }}">

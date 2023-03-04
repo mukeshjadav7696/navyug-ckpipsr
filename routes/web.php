@@ -12,6 +12,7 @@ use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudentsController;
+use App\Http\Controllers\TnpController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,14 @@ use App\Http\Controllers\StudentsController;
 
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
+
+Route::prefix('tnp')
+  ->name('tnp.')
+  ->group(function () {
+    Route::get('/committee', [TnpController::class, 'committee'])->name('iqac');
+    Route::get('/placements', [TnpController::class, 'placements'])->name('placements');
+    Route::get('/visits', [TnpController::class, 'visits'])->name('visits');
+  });
 
 Route::prefix('cells')
   ->name('cells.')

@@ -27,6 +27,7 @@
         </div>
     </div>
     <div class="column">
+        <p class="heading">Photos</p>
         @php
             $photos = collect($lab->photos)
                 ->map(function ($caption, $url) {

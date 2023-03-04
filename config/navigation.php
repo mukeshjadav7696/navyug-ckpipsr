@@ -155,12 +155,16 @@ return [
       'title' => 'T&P',
       'links' => [
         [
-          'title' => 'Laboratories',
-          'url' => '/resources/laboratories'
+          'title' => 'Committee',
+          'url' => '/tnp/committee'
         ],
         [
-          'title' => 'Photo Galary',
-          'url' => '/resources/photo-gallery'
+          'title' => 'Placements',
+          'url' => '/tnp/placements'
+        ],
+        [
+          'title' => 'Visits',
+          'url' => '/tnp/visits'
         ]
       ]
     ],
