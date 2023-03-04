@@ -76,21 +76,16 @@
       </div>
       <div class="columns">
           <div class="column is-4">
-              <x-info label="Address" :value="$staff->address"></x-info>
-          </div>
-          <div class="column is-4">
               <x-info label="Email" :value="$staff->email"></x-info>
           </div>
           <div class="column is-2">
               <x-info label="Contact No" :value="$staff->contact_no"></x-info>
           </div>
-      </div>
-      <div class="columns">
           @php
               $keys = ['website', 'resume'];
           @endphp
           @foreach ($keys as $key)
-              <div class="column is-6">
+              <div class="column is-3">
                   <x-info label="{{ Str::title($key) }}" :value="$staff->$key">
                   </x-info>
               </div>
