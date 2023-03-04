@@ -194,34 +194,27 @@ return [
         ],
       ]
     ],
-    'announcements' => [
-      'title' => 'Announcements',
-      'url' => '/announcements/announcement',
-      'icon' => 'fas fa-bullhorn'
-    ],
-    'contact' => [
-      'title' => 'Contact Us',
-      'url' => '/about/contact-us',
-      'icon' => 'fas fa-map'
-    ],
+    // 'announcements' => [
+    //   'title' => 'Announcements',
+    //   'url' => '/announcements/announcement',
+    //   'icon' => 'fas fa-bullhorn'
+    // ],
   ],
 
   'quick' => [
-    'home' => [
-      'Home' => '/',
-      'Profile' => '/about/profile'
-    ],
-    'about' => [
-      'The Founder' => '/about/founder',
-      'College App' => 'https://play.google.com/store/apps/details?id=com.mayursoft.collegeerpnavyugcommerce',
-    ],
-    'links' => [
-      'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',
-      'Digital Gujarat' => 'https://www.digitalgujarat.gov.in/',
-      'National Scholorship' => 'https://scholarships.gov.in/',
+    'docs' => [
+      'PCI SIF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ffe40fcad.pdf',
+      'NIRF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff721152d.pdf',
+      'Mandatory Disclosure' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff23a17be.pdf',
     ],
     'newletters' => [
-      'The Founder' => '/about/founder',
+      'e-Bulletin 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf'
+    ],
+    'important links' => [
+      'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',
+      'PCI' => 'https://www.pci.nic.in/',
+      'AICTE' => 'http://www.aicte-india.org/',
+      'GTU' => 'http://www.gtu.ac.in/'
     ],
   ],
 ];

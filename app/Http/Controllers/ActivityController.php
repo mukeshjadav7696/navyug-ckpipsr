@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Helpers\APIEndpoints;
 use App\Helpers\APIHelper;
-use Illuminate\Support\Str;
 
 class ActivityController extends Controller
 {
@@ -38,7 +37,7 @@ class ActivityController extends Controller
   public function achievements()
   {
     //get photos
-    $achievementTypes = APIHelper::getCachedData(APIEndpoints::MASTER_ACHIEVEMENT_TYPES);
+    $achievementTypes = APIHelper::getLiveCollection(APIEndpoints::MASTER_ACHIEVEMENT_TYPES);
 
     //sort achievement types by names
     $achievementTypes = $achievementTypes->sort();
@@ -81,7 +80,7 @@ class ActivityController extends Controller
   public function events()
   {
     //get photos
-    $eventTypes = APIHelper::getCachedData(APIEndpoints::MASTER_EVENT_TYPES);
+    $eventTypes = APIHelper::getLiveCollection(APIEndpoints::MASTER_EVENT_TYPES);
 
     //sort event types by names
     $eventTypes = $eventTypes->sort();

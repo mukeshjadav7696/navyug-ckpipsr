@@ -1,7 +1,7 @@
 <div class="has-background-white">
     <div class="container is-hidden-mobile">
         <div class="columns mb-0">
-            <div class="column is-align-self-center pb-0">
+            <div class="column is-5 is-align-self-center pb-0">
                 <a href="{{ url('/') }}" class="is-flex is-align-items-center">
                     <figure class="image is-64x64">
                         <img src="{{ asset('images/logo.png') }}">
@@ -9,12 +9,12 @@
                     <p class="subtitle ml-2 is-size-6">Navyug Vidyabhvan Trust</p>
                 </a>
             </div>
-            <div class="column is-align-self-center pb-0">
+            <div class="column is-2 is-align-self-center pb-0">
                 <a href="{{ url('/') }}" id="institute-logo">
                     <img src="{{ config('institute.info.logo') }}">
                 </a>
             </div>
-            <div class="column is-align-self-center pb-0">
+            <div class="column is-5 is-flex is-align-self-center pb-0 is-justify-content-end">
                 <a href="tel:{{ config('institute.info.mobile') }}">
                     <span class="icon">
                         <i class="fas fa-phone"></i>
@@ -26,6 +26,14 @@
                         <i class="fas fa-at"></i>
                     </span>
                     <span>{{ config('institute.info.email') }}</span>
+                </a>
+                <a class="has-tooltip-arrow has-tooltip-bottom mx-4" href="{{ url('/announcements/announcement') }}"
+                    data-tooltip="Announcements">
+                    <i class="fas fa-bullhorn"></i>
+                </a>
+                <a class="has-tooltip-arrow has-tooltip-bottom mx-4" href="{{ url('/about/contact-us') }}"
+                    data-tooltip="Contact Us">
+                    <i class="fas fa-map"></i>
                 </a>
             </div>
         </div>

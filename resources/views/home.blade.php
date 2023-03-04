@@ -8,7 +8,10 @@
                         @include('home.photos', ['photos' => $photos])
                     </div>
                     <div class="column is-one-quarter-desktop">
-                        @include('home.notices', ['records' => $announcements, 'title' => 'News & Announcements'])
+                        @include('home.notices', [
+                            'records' => $announcements,
+                            'title' => 'News & Announcements',
+                        ])
                     </div>
                     <div class="column is-one-quarter-desktop">
                         @include('home.notices', ['records' => $notices, 'title' => 'Student Notices'])
@@ -16,11 +19,11 @@
                 </div>
             </div>
         </section>
-        <section class="hero is-warning is-small">
+        {{-- <section class="hero is-warning is-small">
             <div class="hero-body">
                 @include('home.principles')
             </div>
-        </section>
+        </section> --}}
         <section class="hero is-white">
             <div class="hero-body">
                 @include('home.vision')
