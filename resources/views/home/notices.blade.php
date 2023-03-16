@@ -7,15 +7,15 @@
             <div class="splide__track">
                 <ul class="splide__list list">
                     @foreach ($records as $record)
-                        <li class="splide__slide list-item">
+                        <li class="splide__slide list-item is-size-7">
                             <div class="list-item-content">
-                                <span class="has-text-weight-normal has-text-grey is-size-7">{{ $record->date }}</span>
+                                <span class="has-text-weight-normal has-text-grey">{{ $record->date }}</span>
                                 <div class="list-item-title is-flex is-justify-content-space-between">
                                     <span>{{ $record->title }}</span>
                                 </div>
                                 <div class="list-item-description is-flex">
                                     @foreach ($record->links as $label => $url)
-                                        <a class="is-link is-size-7 mr-2" href="{{ $url }}"
+                                        <a class="is-link mr-2" href="{{ $url }}"
                                             target="_blank">{{ $label }}</a>
                                     @endforeach
                                 </div>

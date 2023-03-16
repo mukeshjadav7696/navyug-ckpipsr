@@ -44,11 +44,11 @@
                                     @endif
                                 </div>
                                 @if ($achievement->students)
-                                    <span class="tags has-addons">
-                                        <span class="tag is-dark">
-                                            Students
-                                        </span>
-                                        <span class="tag is-info">{{ $achievement->students }}</span>
+                                    <span class="tag is-dark">
+                                        Students
+                                    </span>
+                                    <span class="help">
+                                        {{ $achievement->students }}
                                     </span>
                                 @endif
                             </div>
