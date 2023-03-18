@@ -3,19 +3,19 @@
         <section class="hero is-primary">
             <div class="hero-body pt-5">
                 <div class="columns">
-                    <div class="column is-half-desktop">
+                    <div class="column is-three-fifths-desktop">
                         <p class="title is-size-4 has-text-weight-bold">{{ config('institute.info.name') }}</p>
                         @include('home.photos', ['photos' => $photos])
                     </div>
-                    <div class="column is-one-quarter-desktop">
+                    <div class="column is-two-fifths-desktop">
                         @include('home.notices', [
                             'records' => $announcements,
                             'title' => 'News & Announcements',
                         ])
                     </div>
-                    <div class="column is-one-quarter-desktop">
+                    {{-- <div class="column is-one-quarter-desktop">
                         @include('home.notices', ['records' => $notices, 'title' => 'Student Notices'])
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>

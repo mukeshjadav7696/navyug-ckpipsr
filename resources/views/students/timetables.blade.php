@@ -5,26 +5,28 @@
             <div class="columns is-centered">
                 <div class="column is-6">
                     <div class="box">
-                        <table class="table is-striped is-fullwidth">
-                            <thead>
-                                <tr>
-                                    <th>Academic Year</th>
-                                    <th>Term</th>
-                                    <th>Semester</th>
-                                    <th>URL</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($timetables as $tt)
+                        <div class="table-container">
+                            <table class="table is-striped is-fullwidth">
+                                <thead>
                                     <tr>
-                                        <td>{{ $tt['academic_year'] }}</td>
-                                        <td>{{ $tt['term'] }}</td>
-                                        <td>{{ $tt['semester'] }}</td>
-                                        <td><a href="{{ $tt['url'] }}" target="_blank">Explore</a></td>
+                                        <th>Academic Year</th>
+                                        <th>Term</th>
+                                        <th>Semester</th>
+                                        <th>URL</th>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @foreach ($timetables as $tt)
+                                        <tr>
+                                            <td>{{ $tt['academic_year'] }}</td>
+                                            <td>{{ $tt['term'] }}</td>
+                                            <td>{{ $tt['semester'] }}</td>
+                                            <td><a href="{{ $tt['url'] }}" target="_blank">Explore</a></td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
