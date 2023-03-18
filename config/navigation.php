@@ -140,6 +140,10 @@ return [
           'title' => 'Alumni',
           'url' => '/students/alumni'
         ],
+        [
+          'title' => 'SSIP',
+          'url' => '/students/ssip'
+        ],
         [],
         [
           'title' => 'Academic Results',

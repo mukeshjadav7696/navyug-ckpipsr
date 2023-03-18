@@ -52,6 +52,7 @@ Route::prefix('cells')
 Route::prefix('students')
   ->name('students.')
   ->group(function () {
+    Route::get('/ssip', [StudentsController::class, 'ssip'])->name('ssip');
     Route::get('/alumni', [StudentsController::class, 'alumni'])->name('alumni');
     Route::get('/scholorships', [StudentsController::class, 'scholorships'])->name('scholorships');
     Route::get('/timetables', [StudentsController::class, 'timetables'])->name('timetables');
