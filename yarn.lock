@@ -1859,6 +1859,11 @@ bulma-list@^1.1.4:
   resolved "https://registry.yarnpkg.com/bulma-list/-/bulma-list-1.2.0.tgz#0734b13a8ae8eaa3e5d3d4aca66cb3a0989b0e7c"
   integrity sha512-hOEVB32dtDyhXS+IqAt1TyRgZFjUTQ2RNXDG7MbvVokjMVeURDIDalGFO8UwjfkpjFMKQzJTlD/rdi3oDtdaHg==
 
+bulma-pageloader@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/bulma-pageloader/-/bulma-pageloader-0.3.0.tgz#94a4ff7d9129cbe01dbc5cae4e64508e13563cf1"
+  integrity sha512-lbahiqhBCov5AYdziHFnC5/JOhCrJWFTpdRiAkwW49IM/mf0whCWHVe8MuejZFu2PEs1mtH8Gnz8exEks4Q+7g==
+
 bulma-quickview@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/bulma-quickview/-/bulma-quickview-2.0.0.tgz#ac85d6cc23f98bd4b4be5cef11e9524554d2bbf3"

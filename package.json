@@ -34,6 +34,7 @@
         "bulma-calendar": "^6.0.9",
         "bulma-checkradio": "^1.1.1",
         "bulma-list": "^1.1.4",
+        "bulma-pageloader": "^0.3.0",
         "bulma-quickview": "^2.0.0",
         "bulma-switch": "^2.0.4",
         "bulma-toast": "^2.2.0",

@@ -1,15 +1,15 @@
   <article class="has-background-light p-4">
-      <div class="level">
-          <div class="level-left">
+      <div class="columns">
+          <div class="column is-2">
               @if ($staff->photo)
-                  <div class="level-item">
-                      <figure class="image">
-                          <img class="panel" src="{{ $staff->photo }}" style="max-width: 128px;">
-                      </figure>
-                  </div>
+                  <figure class="image">
+                      <img class="panel" src="{{ $staff->photo }}" style="max-width: 128px;">
+                  </figure>
               @endif
-              <div class="level-item">
-                  <p class="title has-text-info">
+          </div>
+          <div class="column">
+              <div class="is-flex is-align-items-baseline mb-4">
+                  <span class="is-size-4 has-text-info">
                       {{ $staff->name }}
                       @if ($staff->additional_role)
                           <br />
@@ -17,60 +17,53 @@
                               {{ $staff->additional_role }}
                           </span>
                       @endif
-                  </p>
-              </div>
-          </div>
-          <div class="level-right">
-              <div class="level-item">
-                  <div class="tags has-addons">
+                  </span>
+                  <span class="tags has-addons ml-4">
                       <span class="tag is-dark">
                           <i class="fas fa-at"></i>
                       </span>
                       <span class="tag is-warning">{{ $staff->short_name }}</span>
+                  </span>
+              </div>
+              <div class="columns is-multiline">
+                  <div class="column is-3">
+                      <span class="has-text-grey">Department</span>
+                      <br />
+                      <span class="has-text-primary has-text-weight-bold">{{ $staff->department }}</span>
+                  </div>
+                  <div class="column is-3">
+                      <span class="has-text-grey">Designation</span>
+                      <br />
+                      <span class="has-text-primary has-text-weight-bold">{{ $staff->designation }}</span>
+                  </div>
+                  <div class="column is-3">
+                      <span class="has-text-grey">Qualification</span>
+                      <br />
+                      <span class="has-text-primary has-text-weight-bold">{{ $staff->qualification }}</span>
+                  </div>
+                  <div class="column is-3">
+                      <span class="has-text-grey">Experience</span>
+                      <br />
+                      <span class="has-text-primary has-text-weight-bold">{{ $staff->experience }}</span>
                   </div>
               </div>
-          </div>
-      </div>
-      <div class="box is-shadowless">
-          <div class="divider">detail</div>
-          <div class="columns is-multiline">
-              <div class="column is-6">
-                  <span class="tags has-addons">
-                      <span class="tag">Department</span>
-                      <span class="tag is-primary">{{ $staff->department }}</span>
-                  </span>
-              </div>
-              <div class="column is-6">
-                  <span class="tags has-addons">
-                      <span class="tag">Designation</span>
-                      <span class="tag is-primary">{{ $staff->designation }}</span>
-                  </span>
-              </div>
-              <div class="column is-6">
-                  <span class="tags has-addons">
-                      <span class="tag">Qualification</span>
-                      <span class="tag is-primary">{{ $staff->qualification }}</span>
-                  </span>
-              </div>
-              <div class="column is-6">
-                  <span class="tags has-addons">
-                      <span class="tag">Experience</span>
-                      <span class="tag is-primary">{{ $staff->experience }}</span>
-                  </span>
-              </div>
-          </div>
-          <div class="columns content">
-              <div class="column is-6">
-                  <p class="heading">Profile</p>
-                  <blockquote>
-                      {{ $staff->profile }}
-                  </blockquote>
-              </div>
-              <div class="column is-6">
-                  <p class="heading">Achivements</p>
-                  <blockquote>
-                      {{ $staff->achievements }}
-                  </blockquote>
+              <div class="columns content is-multiline">
+                  @if ($staff->profile)
+                      <div class="column is-12">
+                          <p class="heading">Profile</p>
+                          <blockquote>
+                              {{ $staff->profile }}
+                          </blockquote>
+                      </div>
+                  @endif
+                  @if ($staff->achievements)
+                      <div class="column is-12">
+                          <p class="heading">Achivements</p>
+                          <blockquote>
+                              {{ $staff->achievements }}
+                          </blockquote>
+                      </div>
+                  @endif
               </div>
           </div>
       </div>
@@ -85,10 +78,12 @@
               $keys = ['website', 'resume'];
           @endphp
           @foreach ($keys as $key)
-              <div class="column is-3">
-                  <x-info label="{{ Str::title($key) }}" :value="$staff->$key">
-                  </x-info>
-              </div>
+              @if ($staff->$key)
+                  <div class="column is-3">
+                      <x-info label="{{ Str::title($key) }}" :value="$staff->$key">
+                      </x-info>
+                  </div>
+              @endif
           @endforeach
       </div>
       <div class="columns">
@@ -96,10 +91,12 @@
               $keys = ['facebook', 'linkedin', 'twitter'];
           @endphp
           @foreach ($keys as $key)
-              <div class="column is-4">
-                  <x-info label="{{ Str::title($key) }}" :value="$staff->$key">
-                  </x-info>
-              </div>
+              @if ($staff->$key)
+                  <div class="column is-4">
+                      <x-info label="{{ Str::title($key) }}" :value="$staff->$key">
+                      </x-info>
+                  </div>
+              @endif
           @endforeach
       </div>
   </article>

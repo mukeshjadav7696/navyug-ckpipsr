@@ -12,7 +12,7 @@ $secondary : #F8F2F1;
 // Update Bulma's global variables
 $body-background-color: $secondary;
 $family-sans-serif: 'Nunito',
-sans-serif;
+  sans-serif;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
@@ -20,7 +20,7 @@ $fullhd-enabled: true;
 $control-border-width: 1px;
 $input-shadow: none;
 
-$box-radius:3px;
+$box-radius: 3px;
 $box-padding: 1.5rem;
 $navbar-height: 4rem;
 $navbar-padding-vertical: 1.2rem;
@@ -39,6 +39,7 @@ Extensions
 @import "~bulma-list/sass/bulma-list.sass";
 @import "~bulma-switch";
 @import '~@creativebulma/bulma-collapsible';
+@import '~bulma-pageloader';
 
 /**
 Tooltip
@@ -52,24 +53,24 @@ Custom
 @import "custom.scss";
 
 .tag {
-    &.is-secondary {
-        background-color: $secondary;
-        color: $primary;
-    }
+  &.is-secondary {
+    background-color: $secondary;
+    color: $primary;
+  }
 }
 
 .is-secondary,
 .has-background-secondary {
-    background-color: $secondary;
-    color: $primary;
+  background-color: $secondary;
+  color: $primary;
 }
 
 .has-text-secondary {
-    color: $primary;
+  color: $primary;
 }
 
 @media screen and (min-width: 1024px) {
-    .navbar-dropdown {
-        box-shadow: 0 3px 10px rgba(10, 10, 10, 0.25);
-    }
+  .navbar-dropdown {
+    box-shadow: 0 3px 10px rgba(10, 10, 10, 0.25);
+  }
 }

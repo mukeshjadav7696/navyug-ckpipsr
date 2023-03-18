@@ -182,3 +182,11 @@ export const showMessage = (message, type) => {
   });
 }
 
+export const showLoader = () => {
+  console.log('show')
+  $('div#pageloader').addClass('is-active')
+}
+
+export const hideLoader = () => {
+  $('div#pageloader').removeClass('is-active')
+}

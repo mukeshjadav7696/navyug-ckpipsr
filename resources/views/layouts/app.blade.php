@@ -34,6 +34,7 @@
 
     <footer>
         @include('layouts.elements.footer')
+        <div id="pageloader" style="opacity: 0.8;" class="pageloader"><span class="title">Loading</span></div>
     </footer>
 
     <script type="module">

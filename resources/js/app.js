@@ -4,9 +4,11 @@ require('alpinejs');
 /**
  * Custom 
  */
-import { Custom, showMessage } from "./custom"
+import { Custom, showMessage, showLoader, hideLoader } from "./custom"
 window.CustomComponents = new Custom()
 window.showMessage = showMessage
+window.showLoader = showLoader
+window.hideLoader = hideLoader
 
 /**
  * Filter panel
