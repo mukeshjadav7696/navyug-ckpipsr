@@ -49,6 +49,18 @@
                                         </a>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>FRC</td>
+                                    <td>2020-21 to 2022-23</td>
+                                    <td>
+                                        <a href="{{ config('site.documents.academics.approvals.frc') }}"
+                                            target="_blank">
+                                            <span class="icon">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

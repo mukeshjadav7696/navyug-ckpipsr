@@ -93,7 +93,7 @@
                                             $url = config('institute.info')[$platform] ?? null;
                                         @endphp
                                         @if ($url)
-                                            <a href="#" target="_blank">
+                                            <a href="{{ $url }}" target="_blank">
                                                 <span class="icon is-large">
                                                     <i class="{{ $icon }} fa-2x"></i>
                                                 </span>

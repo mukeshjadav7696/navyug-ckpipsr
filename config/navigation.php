@@ -42,6 +42,10 @@ return [
           'url' => '/about/governing-body'
         ],
         [
+          'title' => 'Principal',
+          'url' => '/about/principal'
+        ],
+        [
           'title' => 'Contact Us',
           'url' => '/about/contact-us'
         ]
@@ -75,10 +79,10 @@ return [
           'title' => 'Faculties',
           'url' => '/staff/list/teaching'
         ],
-        [
-          'title' => 'Administrative',
-          'url' => '/staff/list/non-teaching'
-        ],
+        // [
+        //   'title' => 'Administrative',
+        //   'url' => '/staff/list/non-teaching'
+        // ],
       ]
     ],
     'alumni' => [
@@ -111,10 +115,6 @@ return [
         [
           'title' => 'SC-ST Cell',
           'url' => '/cells/scst'
-        ],
-        [
-          'title' => 'Career and Placement Cell',
-          'url' => '/cells/cpc'
         ],
       ]
     ],
@@ -163,7 +163,7 @@ return [
           'url' => '/tnp/placements'
         ],
         [
-          'title' => 'Visits',
+          'title' => 'Industrial Visits',
           'url' => '/tnp/visits'
         ]
       ]

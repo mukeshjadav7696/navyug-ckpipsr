@@ -5,6 +5,16 @@ namespace App\Http\Controllers;
 class AboutController extends Controller
 {
   /**
+   * Display the principal
+   *
+   * @return \Illuminate\View\View
+   */
+  public function principal()
+  {
+    return view('about.principal');
+  }
+
+  /**
    * Display the profile view
    *
    * @return \Illuminate\View\View

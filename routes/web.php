@@ -109,6 +109,7 @@ Route::prefix('departments')
 Route::prefix('about')
   ->name('about.')
   ->group(function () {
+    Route::get('principal', [AboutController::class, 'principal'])->name('principal');
     Route::get('profile', [AboutController::class, 'profile'])->name('profile');
     Route::get('trust', [AboutController::class, 'trust'])->name('trust');
     Route::get('vision-mission', [AboutController::class, 'visionMission'])->name('vision-mission');
