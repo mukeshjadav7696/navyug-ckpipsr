@@ -77,14 +77,13 @@
                             <div id="gmap">
                                 <iframe src="{{ config('institute.info.location') }}" width="100%" height="400"
                                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                    allowfullscreen="allowfullscreen" loading="lazy">
+                                    allowfullscreen="allowfullscreen" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
                                 </iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://goo.gl/maps/MBLyJ82ujrbZfJFfA" target="_blank"
-                    class="button is-info is-pulled-right">View Larger Map</a>
             </div>
         </x-page-content>
     </x-slot>

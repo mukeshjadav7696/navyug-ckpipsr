@@ -38,7 +38,7 @@ return [
     "other_contact_nos" => [
       "9099063116"
     ],
-    "location" => "https://goo.gl/maps/MBLyJ82ujrbZfJFfA",
+    "location" => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5923.654116328731!2d72.71618443860855!3d21.13191122833264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be052ae998fda3d%3A0x23340ab807f12d7!2sC.K.%20Pthawalla%20Institute%20of%20Pharmaceutical%20Science%20and%20Research!5e0!3m2!1sen!2sin!4v1679122645038!5m2!1sen!2sin",
     "timings" => "9:30 AM to 5:10 PM",
     "facebook" => "https://www.facebook.com/profile.php?id=100069960302545",
     "linkedin" => "https://www.linkedin.com/school/c.k.pithawala-institute-of-pharmaceutical-science-research-surat-216/about/",
