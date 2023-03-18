@@ -27,6 +27,11 @@ return [
       "M2" => "To train students as technical and knowledgeable workforce for society.",
       "M3" => "To train students as technical and knowledgeable workforce for society."
     ],
+    "peo" => [
+      "KNOWLEDGE" => "To produce pharmacists with strong basics and high technical knowledge of pharmacy to cater the various areas of the pharmaceutical industry and healthcare profession.",
+      "CORE COMPETENCY" => "To provide the required training in all aspects to the graduates to work as health care professionals in community and hospital pharmacies.",
+      "PROFESSIONALISM" => "To provide professional and dedicated pharmacists to the society with skill and will to formulate and serve quality medicine in line with counseling.",
+    ],
     "description" => "C.K Pithawalla Institute Of Pharmaceutical Science & Research was founded in 2005 and is being managed by the Navyug Vidyabhavan Trust which was founded in February, 1965.\r\n\r\nWithin a short span of its operation, the college has provided all the necessary facilities to help the students which includes a well eastablished library containing a large number of books, reference books, technical & general magazines.\r\n\r\nHonourable late Shri C.K. Pithawalla has been the driving force for the setting up of this college named after him and is continually drawing inspiration from him. This institute of learning in particular, like many others, owes a great deal to his vision, understanding and missionary zeal right from its inception to its bloassoming.",
     "address" => "Opposite Surat Airport,\r\nBehind DPS School,\r\nNear Malvan Mandir,\r\nDumas Road, Surat - 395007.",
     "email" => "ckpipsr@gmail.com",
