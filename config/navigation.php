@@ -67,13 +67,18 @@ return [
           'url' => '/staff/list/teaching'
         ],
         [
-          'title' => 'Laboratories',
-          'url' => '/resources/laboratories'
-        ],
-        [
-          'title' => 'Photo Galary',
-          'url' => '/resources/photo-gallery'
-        ],
+          'title' => 'Resources',
+          'links' => [
+            [
+              'title' => 'Laboratories',
+              'url' => '/resources/laboratories'
+            ],
+            [
+              'title' => 'Photo Galary',
+              'url' => '/resources/photo-gallery'
+            ],
+          ]
+        ]
         // [
         //   'title' => 'Admission',
         //   'url' => '/academics/admission'
@@ -158,60 +163,70 @@ return [
       'title' => 'Research & Innovation',
       'links' => [
         [
-          'title' => 'About Research',
-          'url' => '/rni/research/about'
+          'title' => 'Research',
+          'links' => [
+            [
+              'title' => 'About Research',
+              'url' => '/rni/research/about'
+            ],
+            [
+              'title' => 'Research Ethics',
+              'url' => '/rni/research/ethics'
+            ],
+            [
+              'title' => 'Patents',
+              'url' => '/rni/research/patents'
+            ],
+            [
+              'title' => 'Research Publications',
+              'url' => '/rni/research/publications'
+            ],
+            [
+              'title' => 'MOUs',
+              'url' => '/rni/research/mous'
+            ],
+            [
+              'title' => 'Books and Chapters',
+              'url' => '/rni/research/books'
+            ],
+            [
+              'title' => 'Consultancy and Sponsored Project',
+              'url' => '/rni/research/consultancy'
+            ],
+            [
+              'title' => 'Seminar and Consultancy Grants',
+              'url' => '/rni/research/grants'
+            ],
+            [
+              'title' => 'Doctaral Studies',
+              'url' => '/rni/research/doctaral'
+            ],
+            [
+              'title' => 'PG Projects',
+              'url' => '/rni/research/pg'
+            ],
+          ]
         ],
         [
-          'title' => 'Research Ethics',
-          'url' => '/rni/research/ethics'
-        ],
-        [
-          'title' => 'Patents',
-          'url' => '/rni/research/patents'
-        ],
-        [
-          'title' => 'Research Publications',
-          'url' => '/rni/research/publications'
-        ],
-        [
-          'title' => 'MOUs',
-          'url' => '/rni/research/mous'
-        ],
-        [
-          'title' => 'Books and Chapters',
-          'url' => '/rni/research/books'
-        ],
-        [
-          'title' => 'Consultancy and Sponsored Project',
-          'url' => '/rni/research/consultancy'
-        ],
-        [
-          'title' => 'Seminar and Consultancy Grants',
-          'url' => '/rni/research/grants'
-        ],
-        [
-          'title' => 'Doctaral Studies',
-          'url' => '/rni/research/doctaral'
-        ],
-        [
-          'title' => 'PG Projects',
-          'url' => '/rni/research/pg'
-        ],
-        [
-          'title' => 'About SSIP',
-          'url' => '/rni/ssip/about'
-        ],
-        [
-          'title' => 'Mentors',
-          'url' => '/rni/ssip/mentors'
-        ],
-        [
-          'title' => 'Update',
-          'url' => '/rni/ssip/updates'
-        ],
-        [
-          'title' => 'Apply to Get Assistance',
-          'url' => '/rni/ssip/apply'
+          'title' => 'SSIP',
+          'links' => [
+            [
+              'title' => 'About SSIP',
+              'url' => '/rni/ssip/about'
+            ],
+            [
+              'title' => 'Mentors',
+              'url' => '/rni/ssip/mentors'
+            ],
+            [
+              'title' => 'Update',
+              'url' => '/rni/ssip/updates'
+            ],
+            [
+              'title' => 'Apply to Get Assistance',
+              'url' => '/rni/ssip/apply'
+            ],
+          ]
         ],
         [
           'title' => 'IIC',

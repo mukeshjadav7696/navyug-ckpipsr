@@ -9,126 +9,166 @@ Custome styles
 */
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 #trust-panel-container {
-    position: relative;
+  position: relative;
 }
 
 #institute-logo {
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%, 5px);
-    z-index: 40;
-    background: white;
-    border-radius: 100%;
-    width: 128px;
-    height: 128px;
-    padding: 0.4rem;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 5px);
+  z-index: 40;
+  background: white;
+  border-radius: 100%;
+  width: 128px;
+  height: 128px;
+  padding: 0.4rem;
 }
 
 #notification-container {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
 }
 
 .is-position-relative {
-    position: relative !important;
+  position: relative !important;
 }
 
 .is-borderless {
-    border: none !important;
+  border: none !important;
 }
 
 .is-normal-wrap {
-    white-space: normal !important;
+  white-space: normal !important;
 }
 
 .is-margin-auto {
-    margin: auto !important;
+  margin: auto !important;
 }
 
 .is-rupee::before {
-    content: '\20B9\0020';
+  content: '\20B9\0020';
 }
 
 a {
-    &.is-link {
-        border-bottom: 1px dotted;
-    }
+  &.is-link {
+    border-bottom: 1px dotted;
+  }
 }
 
 .modal {
-    .is-modal-large {
-        width: 75%;
-    }
+  .is-modal-large {
+    width: 75%;
+  }
 
-    .is-modal-medium {
-        width: 60%;
-        padding: 1em;
-    }
+  .is-modal-medium {
+    width: 60%;
+    padding: 1em;
+  }
 
-    .modal-content {
-        padding-top: 32px; // height of close icon
-    }
+  .modal-content {
+    padding-top: 32px; // height of close icon
+  }
 
-    .modal-close {
-        position: absolute;
-        right: 0px;
-        top: 0;
-    }
+  .modal-close {
+    position: absolute;
+    right: 0px;
+    top: 0;
+  }
 }
 
 .tags {
-    &.are-tiny {
-        .tag {
-            font-size: 0.6em;
-        }
+  &.are-tiny {
+    .tag {
+      font-size: 0.6em;
     }
+  }
 
-    &.are-marginless {
-        margin-bottom: 0;
+  &.are-marginless {
+    margin-bottom: 0;
 
-        .tag {
-            margin-bottom: 0;
-        }
+    .tag {
+      margin-bottom: 0;
     }
+  }
 }
 
 .is-lighten {
-    filter: brightness(70%);
+  filter: brightness(70%);
 }
 
 .is-darken {
-    filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .message {
-    .message-body {
-        &.has-border-top {
-            border-width: 4px 0 0 0;
-        }
+  .message-body {
+    &.has-border-top {
+      border-width: 4px 0 0 0;
     }
+  }
 }
 
 
-.is-grid {
-
+@media screen and (min-width: 1024px) {
+  .is-grid {
     display: grid;
     gap: 5px;
 
     @for $i from 1 through 12 {
-        &.is-#{$i} {
-            grid-template-columns: repeat($i, 1fr);
-        }
+      &.is-#{$i} {
+        grid-template-columns: repeat($i, 1fr);
+      }
     }
+  }
+}
+
+.nested.dropdown {
+  &.navbar-item.dropdown {
+    padding: 0;
+  }
+
+  &.navbar-item.dropdown:hover {
+    background-color: whitesmoke;
+  }
+
+  &:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    top: -5px;
+    margin-left: 100%;
+    background-color: whitesmoke;
+  }
+
+  &.is-right>.dropdown-menu {
+    top: -5px;
+    margin-right: 100%;
+  }
+
+  .dropdown-trigger {
+    width: 100%;
+    padding: 0rem 1rem;
+
+    .button {
+      background: none;
+      border: none;
+      font-size: 0.875rem;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

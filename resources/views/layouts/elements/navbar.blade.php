@@ -12,6 +12,6 @@ $navigationDetail = config('navigation');
         @php
             $right = $navigationDetail['right'];
         @endphp
-        @include('layouts.elements.render', ['navigations' => $right])
+        @include('layouts.elements.render', ['navigations' => $right, 'isRight' => true])
     </div>
 </div>
