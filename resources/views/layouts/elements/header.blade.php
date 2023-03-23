@@ -11,7 +11,7 @@
             </div>
             <div class="column is-2 is-align-self-center pb-0">
                 <a href="{{ url('/') }}" id="institute-logo">
-                    <img src="{{ config('institute.info.logo') }}">
+                    <img src="{{ asset('images/logo.webp') }}">
                 </a>
             </div>
             <div class="column is-5 is-flex is-align-self-center pb-0 is-justify-content-end">

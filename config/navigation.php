@@ -59,33 +59,66 @@ return [
           'url' => '/academics/courses'
         ],
         [
-          'title' => 'Admission',
-          'url' => '/academics/admission'
-        ],
-        [
           'title' => 'Approvals',
           'url' => '/academics/approvals'
         ],
         [
-          'title' => 'Departments',
-          'url' => '/departments/index'
-        ],
-      ]
-    ],
-    'staff' => [
-      'title' => 'Staff',
-      'links' => [
-        [
           'title' => 'Faculties',
           'url' => '/staff/list/teaching'
         ],
+        [
+          'title' => 'Laboratories',
+          'url' => '/resources/laboratories'
+        ],
+        [
+          'title' => 'Photo Galary',
+          'url' => '/resources/photo-gallery'
+        ],
         // [
-        //   'title' => 'Administrative',
-        //   'url' => '/staff/list/non-teaching'
+        //   'title' => 'Admission',
+        //   'url' => '/academics/admission'
+        // ],
+        // [
+        //   'title' => 'Departments',
+        //   'url' => '/departments/index'
         // ],
       ]
     ],
-    'alumni' => [
+    'students' => [
+      'title' => 'Students Corner',
+      'links' => [
+        [
+          'title' => 'Timetables',
+          'url' => '/students/timetables'
+        ],
+        [
+          'title' => 'Scholorships',
+          'url' => '/students/scholorships'
+        ],
+        [
+          'title' => 'Notice Board',
+          'url' => '/announcements/notice'
+        ],
+        [
+          'title' => 'Alumni',
+          'url' => '/students/alumni'
+        ],
+        [
+          'title' => 'SSIP',
+          'url' => '/students/ssip'
+        ],
+        [],
+        [
+          'title' => 'Academic Results',
+          'url' => 'https://www.gtu.ac.in/result.aspx'
+        ],
+        [
+          'title' => 'Documents',
+          'url' => '/documents'
+        ],
+      ]
+    ],
+    'cells' => [
       'title' => 'Cells',
       'links' => [
         [
@@ -121,37 +154,106 @@ return [
   ],
 
   'right' => [
-    'students' => [
-      'title' => 'Students Corner',
+    'rni' => [
+      'title' => 'Research & Innovation',
       'links' => [
         [
-          'title' => 'Timetables',
-          'url' => '/students/timetables'
+          'title' => 'About Research',
+          'url' => '/rni/research/about'
         ],
         [
-          'title' => 'Scholorships',
-          'url' => '/students/scholorships'
+          'title' => 'Research Ethics',
+          'url' => '/rni/research/ethics'
         ],
         [
-          'title' => 'Notice Board',
-          'url' => '/announcements/notice'
+          'title' => 'Patents',
+          'url' => '/rni/research/patents'
         ],
         [
-          'title' => 'Alumni',
-          'url' => '/students/alumni'
+          'title' => 'Research Publications',
+          'url' => '/rni/research/publications'
         ],
         [
-          'title' => 'SSIP',
-          'url' => '/students/ssip'
-        ],
-        [],
-        [
-          'title' => 'Academic Results',
-          'url' => 'https://www.gtu.ac.in/result.aspx'
+          'title' => 'MOUs',
+          'url' => '/rni/research/mous'
         ],
         [
-          'title' => 'Documents',
-          'url' => '/documents'
+          'title' => 'Books and Chapters',
+          'url' => '/rni/research/books'
+        ],
+        [
+          'title' => 'Consultancy and Sponsored Project',
+          'url' => '/rni/research/consultancy'
+        ],
+        [
+          'title' => 'Seminar and Consultancy Grants',
+          'url' => '/rni/research/grants'
+        ],
+        [
+          'title' => 'Doctaral Studies',
+          'url' => '/rni/research/doctaral'
+        ],
+        [
+          'title' => 'PG Projects',
+          'url' => '/rni/research/pg'
+        ],
+        [
+          'title' => 'About SSIP',
+          'url' => '/rni/ssip/about'
+        ],
+        [
+          'title' => 'Mentors',
+          'url' => '/rni/ssip/mentors'
+        ],
+        [
+          'title' => 'Update',
+          'url' => '/rni/ssip/updates'
+        ],
+        [
+          'title' => 'Apply to Get Assistance',
+          'url' => '/rni/ssip/apply'
+        ],
+        [
+          'title' => 'IIC',
+          'url' => '/rni/iic'
+        ],
+
+      ]
+    ],
+    'iqac' => [
+      'title' => 'IQAC',
+      'links' => [
+        [
+          'title' => 'About IQAC',
+          'url' => '/iqac/about'
+        ],
+        [
+          'title' => 'IQAC Composition',
+          'url' => '/iqac/composition'
+        ],
+        [
+          'title' => 'Initiatives and Activities',
+          'url' => '/iqac/initiatives'
+        ],
+        [
+          'title' => 'MoMs and ATR',
+          'url' => '/iqac/moms'
+        ],
+        [
+          'title' => 'AISHE',
+          'url' => '/iqac/aishe'
+        ],
+        [
+          'title' => 'IIQA',
+          'url' => '/iqac/iiqa'
+        ],
+        [
+          'title' => 'Best Practices',
+          'url' => '/iqac/practices'
+        ],
+        [
+          'title' => 'Institution Distinctiveness',
+          'url' => '/iqac/distinctiveness'
         ],
       ]
     ],
@@ -169,19 +271,6 @@ return [
         [
           'title' => 'Industrial Visits',
           'url' => '/tnp/visits'
-        ]
-      ]
-    ],
-    'resources' => [
-      'title' => 'Resources',
-      'links' => [
-        [
-          'title' => 'Laboratories',
-          'url' => '/resources/laboratories'
-        ],
-        [
-          'title' => 'Photo Galary',
-          'url' => '/resources/photo-gallery'
         ]
       ]
     ],
@@ -212,7 +301,15 @@ return [
       'Mandatory Disclosure' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff23a17be.pdf',
     ],
     'newletters' => [
-      'e-Bulletin 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf'
+      '2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
+      "2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
+      "Winter 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
+      "Winter 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",
+      "Summer 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8e4cfdbd.pdf",
+      "Summer 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd85b4d034.pdf",
+      "Winter 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd9516f8b0.pdf",
+      "2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8af982a6.pdf",
+      "2015" => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8957541b.pdf'
     ],
     'important links' => [
       'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',

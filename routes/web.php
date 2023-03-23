@@ -1,18 +1,20 @@
 <?php
 
 use App\Http\Controllers\AboutController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\AcademicsController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\CellsController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\IQACController;
+use App\Http\Controllers\ResearchInnovationController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\TnpController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,10 +30,49 @@ use App\Http\Controllers\TnpController;
 Route::get('/', [HomePageController::class, 'home']);
 Route::get('/welcome', [HomePageController::class, 'welcome']);
 
+Route::prefix('iqac')
+  ->name('iqac.')
+  ->group(function () {
+    Route::get('/about', [IQACController::class, 'about']);
+    Route::get('/composition', [IQACController::class, 'composition']);
+    Route::get('/initiatives', [IQACController::class, 'initiatives']);
+    Route::get('/moms', [IQACController::class, 'moms']);
+    Route::get('/aishe', [IQACController::class, 'aishe']);
+    Route::get('/iiqa', [IQACController::class, 'iiqa']);
+    Route::get('/practices', [IQACController::class, 'practices']);
+    Route::get('/distinctiveness', [IQACController::class, 'distinctiveness']);
+  });
+
+Route::prefix('rni')
+  ->name('rni.')
+  ->group(function () {
+
+    //reserach
+    Route::get('/research/about', [ResearchInnovationController::class, 'about']);
+    Route::get('/research/ethics', [ResearchInnovationController::class, 'ethics']);
+    Route::get('/research/patents', [ResearchInnovationController::class, 'patents']);
+    Route::get('/research/publications', [ResearchInnovationController::class, 'publications']);
+    Route::get('/research/mous', [ResearchInnovationController::class, 'mous']);
+    Route::get('/research/books', [ResearchInnovationController::class, 'books']);
+    Route::get('/research/consultancy', [ResearchInnovationController::class, 'consultancy']);
+    Route::get('/research/grants', [ResearchInnovationController::class, 'grants']);
+    Route::get('/research/doctaral', [ResearchInnovationController::class, 'doctaral']);
+    Route::get('/research/pg', [ResearchInnovationController::class, 'pg']);
+
+    //ssip
+    Route::get('/ssip/about', [ResearchInnovationController::class, 'ssipAbout']);
+    Route::get('/ssip/mentors', [ResearchInnovationController::class, 'ssipMentors']);
+    Route::get('/ssip/updates', [ResearchInnovationController::class, 'ssipUpdates']);
+    Route::get('/ssip/apply', [ResearchInnovationController::class, 'ssipApply']);
+
+    //iic
+    Route::get('/iic', [ResearchInnovationController::class, 'iic']);
+  });
+
 Route::prefix('tnp')
   ->name('tnp.')
   ->group(function () {
-    Route::get('/committee', [TnpController::class, 'committee'])->name('iqac');
+    Route::get('/committee', [TnpController::class, 'committee'])->name('committee');
     Route::get('/placements', [TnpController::class, 'placements'])->name('placements');
     Route::get('/visits', [TnpController::class, 'visits'])->name('visits');
   });
