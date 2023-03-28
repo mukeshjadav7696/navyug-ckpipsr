@@ -75,6 +75,7 @@ Route::prefix('tnp')
     Route::get('/committee', [TnpController::class, 'committee'])->name('committee');
     Route::get('/placements', [TnpController::class, 'placements'])->name('placements');
     Route::get('/visits', [TnpController::class, 'visits'])->name('visits');
+    Route::get('/activity', [TnpController::class, 'activity'])->name('activity');
   });
 
 Route::prefix('cells')
