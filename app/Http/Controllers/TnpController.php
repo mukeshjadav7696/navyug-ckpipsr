@@ -11,6 +11,16 @@ class TnpController extends Controller
 {
 
   /**
+   * Activities
+   *
+   * @return \Illuminate\View\View
+   */
+  public function activity()
+  {
+    return view('tnp.activity');
+  }
+
+  /**
    * Visits
    *
    * @return \Illuminate\View\View

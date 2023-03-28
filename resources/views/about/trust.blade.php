@@ -56,37 +56,37 @@
                                         Name of the Institution
                                     </th>
                                     <th class="has-text-centered">
-                                        No. of Students (2020-2021)
+                                        Students Intake
                                     </th>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">1</td>
                                     <td>Navyug Arts College</td>
-                                    <td class="has-text-centered">858</td>
+                                    <td class="has-text-centered">685</td>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">2</td>
                                     <td>Navyug Science College</td>
-                                    <td class="has-text-centered">955</td>
+                                    <td class="has-text-centered">525</td>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">3</td>
                                     <td>Navyug Commerce College</td>
-                                    <td class="has-text-centered">2084</td>
+                                    <td class="has-text-centered">150</td>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">4</td>
                                     <td>
                                         Maniben Pithawalla Industrial Training Institute
                                     </td>
-                                    <td class="has-text-centered">169</td>
+                                    <td class="has-text-centered">240</td>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">5</td>
                                     <td>
                                         C. K. Pithawala College of Engineering &amp; Technology
                                     </td>
-                                    <td class="has-text-centered">1015</td>
+                                    <td class="has-text-centered">420</td>
                                 </tr>
                                 <tr>
                                     <td class="has-text-centered">6</td>
@@ -94,7 +94,7 @@
                                         C. K. Pithawalla Inst. of Pharmaceutical Science &amp;
                                         Research
                                     </td>
-                                    <td class="has-text-centered">248</td>
+                                    <td class="has-text-centered">100</td>
                                 </tr>
                             </tbody>
                         </table>

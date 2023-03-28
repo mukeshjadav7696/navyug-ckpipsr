@@ -119,16 +119,19 @@ class CellsController extends Controller
   public function arc()
   {
     //path of file
-    $path = Storage::path('data/cells/arc.csv');
-
     try {
+      $path = Storage::path('data/cells/arc.csv');
       $committee = Excel::toArray(new CsvImport, $path);
       $committee = $committee[0];
-      return view('cells.arc', compact('committee'));
+
+      $path = Storage::path('data/cells/ars.csv');
+      $squad = Excel::toArray(new CsvImport, $path);
+      $squad = $squad[0];
     } catch (\Throwable $th) {
       Log::error('CellsController:arc', [$th->getMessage()]);
       return back()->withErrors('ARC data file not present.');
     }
+    return view('cells.arc', compact('committee', 'squad'));
   }
 
   /**

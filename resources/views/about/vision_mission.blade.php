@@ -19,7 +19,7 @@
                             </blockquote>
                         @endforeach
                     </div>
-                    <div class="column is-6">
+                    <div class="column is-12">
                         <p class="title is-4">PEOs</p>
                         <div class="columns content">
                             @foreach (config('institute.info.peo') as $key => $statement)
@@ -32,7 +32,18 @@
                                 </div>
                             @endforeach
                         </div>
-
+                    </div>
+                    <div class="column is-12">
+                        <p class="title is-4">PO</p>
+                        <div class="content">
+                            @foreach (config('institute.info.po') as $key => $statement)
+                                <span class="has-text-primary has-text-weight-bold">{{ $key }}</span>
+                                <p class="is-italic">
+                                    {{ $statement }}
+                                </p>
+                                <hr />
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

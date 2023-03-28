@@ -2,19 +2,32 @@
     <x-slot name="content">
         <x-site.pagetitle title="SC-ST Cell" />
         <x-page-content>
-            <div class="columns">
-                <div class="column">
+            <div class="tabs is-centered">
+                <ul>
+                    <li class="tab is-active" data-content="tab-committee"><a>Committee</a></li>
+                    <li class="tab" data-content="tab-circulars"><a>Circulars</a></li>
+                    <li class="tab" data-content="tab-complaint"><a>Complaint</a></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tab-committee">
+                <div class="box">
                     <div class="content">
                         <p>
                             The SC/ST cell of the college was established with the purpose to empower the SC/ST students
                             in the college. The college takes special interest in facilitating financial support to
                             students from these communities from government agencies and other sources.
                         </p>
-                        <a href="https://forms.gle/pitygSdQzm2x2Hjx9" target="_blank"
-                            class="button is-primary is-outlined">Complaint Form</a>
                     </div>
-                    <div class="box">
-                        @include('cells.committee', compact('committee'))
+                    @include('cells.committee', compact('committee'))
+                </div>
+            </div>
+            <div class="tab-content is-hidden" id="tab-circulars">
+            </div>
+            <div class="tab-content is-hidden" id="tab-complaint">
+                <div class="columns is-centered">
+                    <div class="column is-10">
+                        <iframe src="https://forms.gle/eyES1eyX5NW1Km8C9" height="1050" frameborder="0"
+                            marginheight="0" marginwidth="0" style="width: 100%">Loading…</iframe>
                     </div>
                 </div>
             </div>

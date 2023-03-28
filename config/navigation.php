@@ -286,6 +286,10 @@ return [
         [
           'title' => 'Industrial Visits',
           'url' => '/tnp/visits'
+        ],
+        [
+          'title' => 'Activity',
+          'url' => '/tnp/activity'
         ]
       ]
     ],
