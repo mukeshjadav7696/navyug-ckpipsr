@@ -74,6 +74,34 @@ return [
               'url' => '/resources/laboratories'
             ],
             [
+              'title' => 'Sports',
+              'url' => '/resources/sports'
+            ],
+            [
+              'title' => 'Hostel',
+              'url' => '/resources/hostel'
+            ],
+            [
+              'title' => 'Medical',
+              'url' => '/resources/medical'
+            ],
+            [
+              'title' => 'Transportation',
+              'url' => '/resources/transportation'
+            ],
+            [
+              'title' => 'Seminar Hall',
+              'url' => '/resources/seminar-hall'
+            ],
+            [
+              'title' => 'Cafeteria',
+              'url' => '/resources/cafeteria'
+            ],
+            [
+              'title' => 'Central Facilities',
+              'url' => '/resources/central'
+            ],
+            [
               'title' => 'Photo Galary',
               'url' => '/resources/photo-gallery'
             ],

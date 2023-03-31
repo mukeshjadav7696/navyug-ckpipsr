@@ -131,6 +131,15 @@ Route::prefix('activities')
 Route::prefix('resources')
   ->name('resources.')
   ->group(function () {
+
+    Route::get('/transportation', [ResourceController::class, 'transportation'])->name('transportation');
+    Route::get('/cafeteria', [ResourceController::class, 'cafeteria'])->name('cafeteria');
+    Route::get('/seminar-hall', [ResourceController::class, 'seminarHall'])->name('seminar-hall');
+    Route::get('/medical', [ResourceController::class, 'medical'])->name('medical');
+    Route::get('/central', [ResourceController::class, 'central'])->name('central');
+    Route::get('/hostel', [ResourceController::class, 'hostel'])->name('hostel');
+    Route::get('/sports', [ResourceController::class, 'sports'])->name('sports');
+
     Route::get('/laboratories', [ResourceController::class, 'laboratories'])->name('laboratories');
     Route::get('/photo-gallery', [ResourceController::class, 'photoGallery'])->name('photo-gallery');
   });

@@ -11,6 +11,16 @@ return [
       "gtu" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/63f5f67644685.pdf",
       "frc" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64031c4975715.pdf",
     ]
+  ],
+  "resources" => [
+    "hostel" => [
+      'registrationForm' => 'https://drive.google.com/file/d/1sLgtDxpJW99qfQalLZo9WH5v7BrnbNzB/view?usp=sharing'
+    ],
+    "medical" => [
+      'mou' => 'https://drive.google.com/file/d/1J5UNokA3OKlKCK8YxUI3wFy8PRLw62CC/view?usp=sharing'
+    ],
+    "transportation" => [
+      'busSchedule' => 'https://drive.google.com/file/d/1XmuAmH27k4HMUEqEAYb7xk7mKDrjZMv4/view'
+    ]
   ]
-
 ];
