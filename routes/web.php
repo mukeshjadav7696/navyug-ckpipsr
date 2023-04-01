@@ -173,7 +173,8 @@ Route::prefix('about')
 Route::prefix('academics')
   ->name('academics.')
   ->group(function () {
-    Route::get('courses', [AcademicsController::class, 'courses'])->name('courses');
+    Route::get('courses/bpharm', [AcademicsController::class, 'bpharm'])->name('bpharm');
+    Route::get('courses/shortterm', [AcademicsController::class, 'shortterm'])->name('shortterm');
     Route::get('admission', [AcademicsController::class, 'admission'])->name('admission');
     Route::get('approvals', [AcademicsController::class, 'approvals'])->name('approvals');
   });

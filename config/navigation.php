@@ -19,7 +19,7 @@ return [
       'icon' => 'fas fa-home'
     ],
     'about' => [
-      'title' => 'About Us',
+      'title' => ' About Us',
       'links' => [
         [
           'title' => 'Profile',
@@ -56,7 +56,16 @@ return [
       'links' => [
         [
           'title' => 'Courses Offered',
-          'url' => '/academics/courses'
+          'links' => [
+            [
+              'title' => 'B.Pharm',
+              'url' => '/academics/courses/bpharm'
+            ],
+            [
+              'title' => 'Short Term Certificate',
+              'url' => '/academics/courses/shortterm'
+            ],
+          ]
         ],
         [
           'title' => 'Approvals',

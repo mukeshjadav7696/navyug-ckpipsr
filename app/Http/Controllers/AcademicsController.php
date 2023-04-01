@@ -9,9 +9,19 @@ class AcademicsController extends Controller
    *
    * @return \Illuminate\View\View
    */
-  public function courses()
+  public function shortterm()
   {
-    return view('academics.courses');
+    return view('academics.shortterm');
+  }
+
+  /**
+   * Display the courses view
+   *
+   * @return \Illuminate\View\View
+   */
+  public function bpharm()
+  {
+    return view('academics.bpharm');
   }
 
   /**
