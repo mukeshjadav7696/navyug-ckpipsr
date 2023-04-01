@@ -160,10 +160,6 @@ return [
       'title' => 'Cells',
       'links' => [
         [
-          'title' => 'Internal Quality Assurance Cell',
-          'url' => '/cells/iqac'
-        ],
-        [
           'title' => 'Grievance Redressal Cell',
           'url' => '/cells/grc'
         ],

@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\CsvImport;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
+
 class IQACController extends Controller
 {
 
@@ -22,7 +27,17 @@ class IQACController extends Controller
    */
   public function composition()
   {
-    return view('iqac.composition');
+    //path of file
+    $path = Storage::path('data/iqac/composition.csv');
+
+    try {
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+      return view('iqac.composition', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('CellsController:iqac', [$th->getMessage()]);
+      return back()->withErrors('IQAC data file not present.');
+    }
   }
 
   /**
