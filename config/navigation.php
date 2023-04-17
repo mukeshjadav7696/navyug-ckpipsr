@@ -138,6 +138,10 @@ return [
           'url' => '/students/scholorships'
         ],
         [
+          'title' => 'Hobby Club',
+          'url' => '/students/hobbyclub'
+        ],
+        [
           'title' => 'Notice Board',
           'url' => '/announcements/notice'
         ],

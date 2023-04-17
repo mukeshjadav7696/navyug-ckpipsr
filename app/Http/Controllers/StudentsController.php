@@ -11,28 +11,13 @@ class StudentsController extends Controller
 {
 
   /**
-   * Display the ssip page
+   * Display the hobbyclub page
    *
    * @return \Illuminate\View\View
    */
-  public function ssip()
+  public function hobbyclub()
   {
-    try {
-
-      //path of alumni managing
-      $path = Storage::path('data/students/ssip_core.csv');
-      $committeeC = Excel::toArray(new CsvImport, $path);
-      $committeeC = $committeeC[0];
-
-      $path = Storage::path('data/students/ssip_scrutiny.csv');
-      $committeeS = Excel::toArray(new CsvImport, $path);
-      $committeeS = $committeeS[0];
-
-      return view('students.ssip', compact('committeeC', 'committeeS'));
-    } catch (\Throwable $th) {
-      Log::error('StudentsController:ssip', [$th->getMessage()]);
-      return back()->withErrors('SSIP data file not present.');
-    }
+    return view('students.hobbyclub');
   }
 
   /**
