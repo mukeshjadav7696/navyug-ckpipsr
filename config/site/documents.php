@@ -24,6 +24,13 @@ return [
     ]
   ],
   "iqac" => [
+    'aishe' => [
+      "reports" => [
+        'AISHE 2021-22' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/642680143b2b4.pdf",
+        'AISHE 2020-21' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64267ff401721.pdf",
+        'AISHE 2019-20' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64267fd8890a9.pdf",
+      ]
+    ],
     'nirf' => [
       "reports" => [
         'NIRF-2023' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64268088bf45f.pdf",

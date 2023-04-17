@@ -88,7 +88,8 @@ class IQACController extends Controller
    */
   public function aishe()
   {
-    return view('iqac.aishe');
+    $reports = config('site.documents.iqac.aishe.reports');
+    return view('iqac.aishe', compact('reports'));
   }
 
   /**
