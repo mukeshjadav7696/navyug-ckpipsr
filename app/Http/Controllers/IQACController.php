@@ -11,6 +11,27 @@ class IQACController extends Controller
 {
 
   /**
+   * `rti` page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function rti()
+  {
+    return view('iqac.rti');
+  }
+
+  /**
+   * `nirf` page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function nirf()
+  {
+    $reports = config('site.documents.iqac.nirf.reports');
+    return view('iqac.nirf', compact('reports'));
+  }
+
+  /**
    * `about` page
    *
    * @return \Illuminate\View\View

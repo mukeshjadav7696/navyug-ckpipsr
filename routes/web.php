@@ -39,6 +39,8 @@ Route::prefix('iqac')
     Route::get('/moms', [IQACController::class, 'moms']);
     Route::get('/aishe', [IQACController::class, 'aishe']);
     Route::get('/iiqa', [IQACController::class, 'iiqa']);
+    Route::get('/rti', [IQACController::class, 'rti']);
+    Route::get('/nirf', [IQACController::class, 'nirf']);
     Route::get('/practices', [IQACController::class, 'practices']);
     Route::get('/distinctiveness', [IQACController::class, 'distinctiveness']);
   });

@@ -299,6 +299,14 @@ return [
           'title' => 'Institution Distinctiveness',
           'url' => '/iqac/distinctiveness'
         ],
+        [
+          'title' => 'RTI',
+          'url' => '/iqac/rti'
+        ],
+        [
+          'title' => 'NIRF',
+          'url' => '/iqac/nirf'
+        ],
       ]
     ],
     'tandp' => [
