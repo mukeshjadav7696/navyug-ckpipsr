@@ -45,6 +45,16 @@ class AboutController extends Controller
   }
 
   /**
+   * Display the PO PEOs view
+   *
+   * @return \Illuminate\View\View
+   */
+  public function poPeos()
+  {
+    return view('about.po_peos');
+  }
+
+  /**
    * Display the founder view
    *
    * @return \Illuminate\View\View

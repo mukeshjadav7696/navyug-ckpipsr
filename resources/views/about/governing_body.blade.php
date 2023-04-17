@@ -13,7 +13,7 @@
                             <div class="list-item">
                                 <div class="list-item-image">
                                     @if ($member['photo'])
-                                        <figure class="image is-48x48 is-clipped">
+                                        <figure class="image is-128x128 is-clipped">
                                             <img src="{{ asset($member['photo']) }}" alt="">
                                         </figure>
                                     @else

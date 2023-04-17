@@ -30,6 +30,10 @@ return [
           'url' => '/about/vision-mission'
         ],
         [
+          'title' => 'PO and PEOs',
+          'url' => '/about/po-peos'
+        ],
+        [
           'title' => 'The Trust',
           'url' => '/about/trust'
         ],

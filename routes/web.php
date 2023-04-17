@@ -167,6 +167,7 @@ Route::prefix('about')
     Route::get('profile', [AboutController::class, 'profile'])->name('profile');
     Route::get('trust', [AboutController::class, 'trust'])->name('trust');
     Route::get('vision-mission', [AboutController::class, 'visionMission'])->name('vision-mission');
+    Route::get('po-peos', [AboutController::class, 'poPeos'])->name('po-peos');
     Route::get('founder', [AboutController::class, 'founder'])->name('founder');
     Route::get('governing-body', [AboutController::class, 'governingBody'])->name('governing-body');
     Route::get('contact-us', [AboutController::class, 'contactUs'])->name('contact-us');
