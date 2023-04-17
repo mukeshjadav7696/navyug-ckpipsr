@@ -9,6 +9,15 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class StudentsController extends Controller
 {
+  /**
+   * Display the courses page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function courses()
+  {
+    return view('students.courses');
+  }
 
   /**
    * Display the hobbyclub page

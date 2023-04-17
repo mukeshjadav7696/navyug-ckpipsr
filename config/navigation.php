@@ -155,13 +155,13 @@ return [
         ],
         [],
         [
-          'title' => 'Academic Results',
-          'url' => 'https://www.gtu.ac.in/result.aspx'
+          'title' => 'Course Portal',
+          'url' => '/students/courses'
         ],
         [
-          'title' => 'Documents',
-          'url' => '/documents'
-        ],
+          'title' => 'Academic Results',
+          'url' => 'https://www.gtu.ac.in/result.aspx'
+        ]
       ]
     ],
     'cells' => [
