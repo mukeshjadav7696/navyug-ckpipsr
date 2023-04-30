@@ -118,6 +118,10 @@ return [
               'title' => 'EV Charging Station',
               'url' => '/resources/echarge'
             ],
+            [
+              'title' => 'Medicinal Garden',
+              'url' => '/resources/garden'
+            ],
             // [
             //   'title' => 'Photo Galary',
             //   'url' => '/resources/photo-gallery'
@@ -202,6 +206,14 @@ return [
         [
           'title' => 'SC-ST Cell',
           'url' => '/cells/scst'
+        ],
+        [
+          'title' => 'Entrepreneurship Development Cell',
+          'url' => '/cells/edc'
+        ],
+        [
+          'title' => 'Physically Disability Grievance Redressal Cell',
+          'url' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/644412c0db2c6.pdf'
         ],
       ]
     ],

@@ -57,7 +57,16 @@ class ResearchInnovationController extends Controller
    */
   public function mous()
   {
-    return view('rni.research.mous');
+    try {
+      //path of alumni managing
+      $path = Storage::path('data/rni/mous.csv');
+      $mous = Excel::toArray(new CsvImport, $path);
+      $mous = $mous[0];
+      return view('rni.research.mous', compact('mous'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:mous', [$th->getMessage()]);
+      return back()->withErrors('MOUs data file not present.');
+    }
   }
 
   /**

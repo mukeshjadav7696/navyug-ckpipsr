@@ -84,6 +84,7 @@ Route::prefix('tnp')
 Route::prefix('cells')
   ->name('cells.')
   ->group(function () {
+    Route::get('/edc', [CellsController::class, 'edc'])->name('edc');
     Route::get('/iqac', [CellsController::class, 'iqac'])->name('iqac');
     Route::get('/grc', [CellsController::class, 'grc'])->name('grc');
     Route::get('/arc', [CellsController::class, 'arc'])->name('arc');
@@ -138,6 +139,7 @@ Route::prefix('resources')
   ->name('resources.')
   ->group(function () {
 
+    Route::get('/garden', [ResourceController::class, 'garden'])->name('garden');
     Route::get('/echarge', [ResourceController::class, 'echarge'])->name('echarge');
     Route::get('/transportation', [ResourceController::class, 'transportation'])->name('transportation');
     Route::get('/cafeteria', [ResourceController::class, 'cafeteria'])->name('cafeteria');

@@ -13,6 +13,16 @@
                     </p>
                 </div>
                 <div class="column">
+                    <div class="columns">
+                        <div class="column">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/WdZUswHH5uY">
+                            </iframe>
+                        </div>
+                        <div class="column">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/EvKkq81l18k">
+                            </iframe>
+                        </div>
+                    </div>
                     <div class="content has-text-justified">
                         <p>
                             Late Shree C. K. Pithawala had been the driving force for the setting up of the Navyug
