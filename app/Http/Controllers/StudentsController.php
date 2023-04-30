@@ -10,6 +10,26 @@ use Maatwebsite\Excel\Facades\Excel;
 class StudentsController extends Controller
 {
   /**
+   * Display the evideos page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function evideos()
+  {
+    return view('students.evideos');
+  }
+
+  /**
+   * Display the elib page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function elib()
+  {
+    return view('students.elib');
+  }
+
+  /**
    * Display the courses page
    *
    * @return \Illuminate\View\View

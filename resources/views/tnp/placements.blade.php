@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="content">
-        <x-site.pagetitle title="Placement Drives" />
+        <x-site.pagetitle title="Placement Details" />
         <x-page-content>
             <div class="columns">
                 <div class="column">

@@ -78,6 +78,7 @@ Route::prefix('tnp')
     Route::get('/placements', [TnpController::class, 'placements'])->name('placements');
     Route::get('/visits', [TnpController::class, 'visits'])->name('visits');
     Route::get('/activity', [TnpController::class, 'activity'])->name('activity');
+    Route::get('/training', [TnpController::class, 'training'])->name('training');
   });
 
 Route::prefix('cells')
@@ -96,6 +97,8 @@ Route::prefix('cells')
 Route::prefix('students')
   ->name('students.')
   ->group(function () {
+    Route::get('/evideos', [StudentsController::class, 'evideos'])->name('evideos');
+    Route::get('/elib', [StudentsController::class, 'elib'])->name('elib');
     Route::get('/courses', [StudentsController::class, 'courses'])->name('courses');
     Route::get('/hobbyclub', [StudentsController::class, 'hobbyclub'])->name('hobbyclub');
     Route::get('/alumni', [StudentsController::class, 'alumni'])->name('alumni');
@@ -135,6 +138,7 @@ Route::prefix('resources')
   ->name('resources.')
   ->group(function () {
 
+    Route::get('/echarge', [ResourceController::class, 'echarge'])->name('echarge');
     Route::get('/transportation', [ResourceController::class, 'transportation'])->name('transportation');
     Route::get('/cafeteria', [ResourceController::class, 'cafeteria'])->name('cafeteria');
     Route::get('/seminar-hall', [ResourceController::class, 'seminarHall'])->name('seminar-hall');

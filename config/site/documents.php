@@ -12,6 +12,16 @@ return [
       "frc" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64031c4975715.pdf",
     ]
   ],
+  "cells" => [
+    "arc" => [
+      'circular' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e618a22187.pdf"
+    ],
+    "sc_st" => [
+      'ugc' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e5e7d7ed21.pdf",
+      'gtu' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e5ea2cc27b.pdf",
+      'aicte' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e5efe7df27.pdf",
+    ]
+  ],
   "resources" => [
     "hostel" => [
       'registrationForm' => 'https://drive.google.com/file/d/1sLgtDxpJW99qfQalLZo9WH5v7BrnbNzB/view?usp=sharing'

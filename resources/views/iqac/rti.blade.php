@@ -18,6 +18,9 @@
                     Principal, <br />
                     C.K Pithawalla Institute Of Pharmaceutical Science &amp; Research
                 </p>
+                <p>
+                    For more details visit: <a href="https://rtionline.gov.in/">https://rtionline.gov.in/</a>
+                </p>
             </div>
         </x-page-content>
     </x-slot>

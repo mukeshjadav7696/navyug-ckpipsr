@@ -34,6 +34,10 @@
                 </div>
             </div>
             <div class="tab-content is-hidden" id="tab-circulars">
+                <a href="{{ config('site.documents.cells.arc.circular') }}" class="button is-link is-outlined"
+                    target="_blank">
+                    Circular
+                </a>
             </div>
             <div class="tab-content is-hidden" id="tab-complaint">
                 <div class="columns is-centered">

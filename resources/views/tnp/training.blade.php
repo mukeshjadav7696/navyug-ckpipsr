@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="content">
-        <x-site.pagetitle title="T&P Activities" />
+        <x-site.pagetitle title="Industrial Training" />
         <x-page-content>
             <x-comming-soon />
         </x-page-content>

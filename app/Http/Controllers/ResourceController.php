@@ -12,6 +12,16 @@ use Maatwebsite\Excel\Facades\Excel;
 class ResourceController extends Controller
 {
   /**
+   * echarge
+   *
+   * @return \Illuminate\View\View
+   */
+  public function echarge()
+  {
+    return view('resources.echarge');
+  }
+
+  /**
    * transportation
    *
    * @return \Illuminate\View\View

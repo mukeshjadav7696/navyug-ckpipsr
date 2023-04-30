@@ -115,9 +115,13 @@ return [
               'url' => '/resources/central'
             ],
             [
-              'title' => 'Photo Galary',
-              'url' => '/resources/photo-gallery'
+              'title' => 'EV Charging Station',
+              'url' => '/resources/echarge'
             ],
+            // [
+            //   'title' => 'Photo Galary',
+            //   'url' => '/resources/photo-gallery'
+            // ],
           ]
         ]
         // [
@@ -155,8 +159,16 @@ return [
         ],
         [],
         [
-          'title' => 'Course Portal',
+          'title' => 'Course Website',
           'url' => '/students/courses'
+        ],
+        [
+          'title' => 'Educational Videos',
+          'url' => '/students/evideos'
+        ],
+        [
+          'title' => 'E-Library',
+          'url' => '/students/elib'
         ],
         [
           'title' => 'Academic Results',
@@ -321,11 +333,11 @@ return [
       'title' => 'T&P',
       'links' => [
         [
-          'title' => 'Committee',
+          'title' => 'About T & P Cell',
           'url' => '/tnp/committee'
         ],
         [
-          'title' => 'Placements',
+          'title' => 'Placement Details',
           'url' => '/tnp/placements'
         ],
         [
@@ -333,9 +345,17 @@ return [
           'url' => '/tnp/visits'
         ],
         [
-          'title' => 'Activity',
+          'title' => 'Industrial Training',
+          'url' => '/tnp/training'
+        ],
+        [
+          'title' => 'Activities',
           'url' => '/tnp/activity'
-        ]
+        ],
+        [
+          'title' => 'Placement Brochures',
+          'url' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e69c173a1c.pdf'
+        ],
       ]
     ],
     'activities' => [
@@ -365,15 +385,15 @@ return [
       'Mandatory Disclosure' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff23a17be.pdf',
     ],
     'newletters' => [
-      '2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
-      "2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
-      "Winter 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
-      "Winter 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",
-      "Summer 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8e4cfdbd.pdf",
-      "Summer 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd85b4d034.pdf",
-      "Winter 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd9516f8b0.pdf",
-      "2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8af982a6.pdf",
-      "2015" => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8957541b.pdf'
+      'Gunadhya Summmer 2020' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
+      "Gunadhya 2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
+      "Gunadhya 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
+      "CKPIPSR e-newsletter Volume 9, Issue II, 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",
+      "CKPIPSR e-newsletter Volume 1o, Issue I, 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8e4cfdbd.pdf",
+      "CKPIPSR e-newsletter Volume 9, Issue I, 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd85b4d034.pdf",
+      "CKPIPSR e-newsletter Volume 8, Issue 2, 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd9516f8b0.pdf",
+      "CKPIPSR e-newsletter Volume 7, Issue 1, 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8af982a6.pdf",
+      "CKPIPSR e-newsletter Volume 6, Issue 1, 2015" => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8957541b.pdf'
     ],
     'important links' => [
       'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',

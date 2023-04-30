@@ -1,6 +1,6 @@
-<div class="columns is-multiline is-mobile">
+<div class="is-flex is-flex-wrap-wrap">
     @foreach ($quickLinks as $section => $links)
-        <div class="column is-one-third-desktop is-half-mobile">
+        <div class="px-2">
             <p class="heading is-italic">{{ $section }}</p>
             <ul class="">
                 @foreach ($links as $title => $url)
