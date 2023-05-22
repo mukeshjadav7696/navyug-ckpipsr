@@ -12,7 +12,26 @@
                         </p>
                     </div>
                     <div class="box">
-                        @include('cells.committee', compact('committee'))
+                        <div class="table-container">
+                            <table class="table is-striped is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Role</th>
+                                        <th>Member Name</th>
+                                        <th>Designation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($committee as $member)
+                                        <tr>
+                                            <td>{{ $member['role'] ?? '-' }}</td>
+                                            <td>{{ $member['name'] }}</td>
+                                            <td>{{ $member['designation'] }}</td>
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
