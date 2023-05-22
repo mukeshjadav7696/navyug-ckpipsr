@@ -181,6 +181,16 @@ class ResearchInnovationController extends Controller
    */
   public function iic()
   {
-    return view('rni.iic');
+    try {
+      //path of alumni managing
+      $path = Storage::path('data/rni/iic_committee.csv');
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+
+      return view('rni.iic', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:iic', [$th->getMessage()]);
+      return back()->withErrors('IIC data file not present.');
+    }
   }
 }

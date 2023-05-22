@@ -5,7 +5,7 @@
             <div class="columns">
                 <div class="column is-4">
                     <div class="content">
-                        <p class="title">Objectives</p>
+                        <p class="subtitle is-size-4 has-text-info">Objectives</p>
                         <ul>
                             <li>To develop entrepreneurship awareness amongst students and faculties</li>
                             <li>To organize Entrepreneurship Motivation Programs</li>
