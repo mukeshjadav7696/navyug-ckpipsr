@@ -34,6 +34,15 @@ return [
     ]
   ],
   "iqac" => [
+    'common' => [
+      'practices' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/647972cdd5946.pdf',
+      'distinctiveness' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64797330c84fd.pdf'
+    ],
+    'moms' => [
+      'IQAC Q1-2023' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/646ef7ec109b6.pdf',
+      'IQAC Q4-2022' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/646ef7b70c5ee.pdf',
+      'IQAC Q3-2022' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/646ef7999475f.pdf',
+    ],
     'aishe' => [
       "reports" => [
         'AISHE 2021-22' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/642680143b2b4.pdf",
@@ -47,6 +56,11 @@ return [
         'NIRF-2022' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6426806d3da45.pdf",
         'NIRF-2021' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/642680441c5e4.pdf",
       ]
+    ]
+  ],
+  "tnp" => [
+    "visits" => [
+      'Industrial Visit 2016-22' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6475bc9ca8d32.pdf"
     ]
   ]
 ];

@@ -393,11 +393,10 @@ return [
   'quick' => [
     'docs' => [
       'PCI SIF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ffe40fcad.pdf',
-      'NIRF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff721152d.pdf',
       'Mandatory Disclosure' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff23a17be.pdf',
     ],
     'newletters' => [
-      'Gunadhya Summmer 2020' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
+      'Gunadhya Summmer 2022' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
       "Gunadhya 2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
       "Gunadhya 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
       "CKPIPSR e-newsletter Volume 9, Issue II, 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",

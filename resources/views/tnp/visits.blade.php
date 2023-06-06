@@ -2,7 +2,15 @@
     <x-slot name="content">
         <x-site.pagetitle title="Industrial Visits" />
         <x-page-content>
-            <div class="columns">
+            <div class="columns is-centered">
+                <div class="column is-9">
+                    @foreach ($reports as $title => $url)
+                        <p class="subtitle has-text-info">{{ $title }}</p>
+                        <embed src="{{ $url }}" width="100%" height="600" type="application/pdf">
+                    @endforeach
+                </div>
+            </div>
+            {{-- <div class="columns">
                 <div class="column">
                     <div class="content">
                         <p>
@@ -40,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </x-page-content>
     </x-slot>
 

@@ -78,7 +78,8 @@ class IQACController extends Controller
    */
   public function moms()
   {
-    return view('iqac.moms');
+    $reports = config('site.documents.iqac.moms');
+    return view('iqac.moms', compact('reports'));
   }
 
   /**
@@ -109,7 +110,8 @@ class IQACController extends Controller
    */
   public function practices()
   {
-    return view('iqac.practices');
+    $url = config('site.documents.iqac.common.practices');
+    return view('iqac.practices', compact('url'));
   }
 
   /**
@@ -119,6 +121,7 @@ class IQACController extends Controller
    */
   public function distinctiveness()
   {
-    return view('iqac.distinctiveness');
+    $url = config('site.documents.iqac.common.distinctiveness');
+    return view('iqac.distinctiveness', compact('url'));
   }
 }
