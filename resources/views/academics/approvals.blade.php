@@ -53,7 +53,7 @@
                                     </tr>
                                     <tr>
                                         <td>FRC</td>
-                                        <td>2020-21 to 2022-23</td>
+                                        <td>2023-24 to 2025-26</td>
                                         <td>
                                             <a href="{{ config('site.documents.academics.approvals.frc') }}"
                                                 target="_blank">
