@@ -39,6 +39,8 @@ Route::prefix('iqac')
     Route::get('/moms', [IQACController::class, 'moms']);
     Route::get('/aishe', [IQACController::class, 'aishe']);
     Route::get('/iiqa', [IQACController::class, 'iiqa']);
+    Route::get('/rti', [IQACController::class, 'rti']);
+    Route::get('/nirf', [IQACController::class, 'nirf']);
     Route::get('/practices', [IQACController::class, 'practices']);
     Route::get('/distinctiveness', [IQACController::class, 'distinctiveness']);
   });
@@ -76,11 +78,13 @@ Route::prefix('tnp')
     Route::get('/placements', [TnpController::class, 'placements'])->name('placements');
     Route::get('/visits', [TnpController::class, 'visits'])->name('visits');
     Route::get('/activity', [TnpController::class, 'activity'])->name('activity');
+    Route::get('/training', [TnpController::class, 'training'])->name('training');
   });
 
 Route::prefix('cells')
   ->name('cells.')
   ->group(function () {
+    Route::get('/edc', [CellsController::class, 'edc'])->name('edc');
     Route::get('/iqac', [CellsController::class, 'iqac'])->name('iqac');
     Route::get('/grc', [CellsController::class, 'grc'])->name('grc');
     Route::get('/arc', [CellsController::class, 'arc'])->name('arc');
@@ -94,7 +98,10 @@ Route::prefix('cells')
 Route::prefix('students')
   ->name('students.')
   ->group(function () {
-    Route::get('/ssip', [StudentsController::class, 'ssip'])->name('ssip');
+    Route::get('/evideos', [StudentsController::class, 'evideos'])->name('evideos');
+    Route::get('/elib', [StudentsController::class, 'elib'])->name('elib');
+    Route::get('/courses', [StudentsController::class, 'courses'])->name('courses');
+    Route::get('/hobbyclub', [StudentsController::class, 'hobbyclub'])->name('hobbyclub');
     Route::get('/alumni', [StudentsController::class, 'alumni'])->name('alumni');
     Route::get('/scholorships', [StudentsController::class, 'scholorships'])->name('scholorships');
     Route::get('/timetables', [StudentsController::class, 'timetables'])->name('timetables');
@@ -132,6 +139,8 @@ Route::prefix('resources')
   ->name('resources.')
   ->group(function () {
 
+    Route::get('/garden', [ResourceController::class, 'garden'])->name('garden');
+    Route::get('/echarge', [ResourceController::class, 'echarge'])->name('echarge');
     Route::get('/transportation', [ResourceController::class, 'transportation'])->name('transportation');
     Route::get('/cafeteria', [ResourceController::class, 'cafeteria'])->name('cafeteria');
     Route::get('/seminar-hall', [ResourceController::class, 'seminarHall'])->name('seminar-hall');
@@ -165,6 +174,7 @@ Route::prefix('about')
     Route::get('profile', [AboutController::class, 'profile'])->name('profile');
     Route::get('trust', [AboutController::class, 'trust'])->name('trust');
     Route::get('vision-mission', [AboutController::class, 'visionMission'])->name('vision-mission');
+    Route::get('po-peos', [AboutController::class, 'poPeos'])->name('po-peos');
     Route::get('founder', [AboutController::class, 'founder'])->name('founder');
     Route::get('governing-body', [AboutController::class, 'governingBody'])->name('governing-body');
     Route::get('contact-us', [AboutController::class, 'contactUs'])->name('contact-us');
@@ -173,7 +183,8 @@ Route::prefix('about')
 Route::prefix('academics')
   ->name('academics.')
   ->group(function () {
-    Route::get('courses', [AcademicsController::class, 'courses'])->name('courses');
+    Route::get('courses/bpharm', [AcademicsController::class, 'bpharm'])->name('bpharm');
+    Route::get('courses/shortterm', [AcademicsController::class, 'shortterm'])->name('shortterm');
     Route::get('admission', [AcademicsController::class, 'admission'])->name('admission');
     Route::get('approvals', [AcademicsController::class, 'approvals'])->name('approvals');
   });

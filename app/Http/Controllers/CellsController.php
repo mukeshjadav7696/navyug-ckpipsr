@@ -11,6 +11,26 @@ class CellsController extends Controller
 {
 
   /**
+   * EDC cell
+   *
+   * @return \Illuminate\View\View
+   */
+  public function edc()
+  {
+    //path of file
+    $path = Storage::path('data/cells/edc.csv');
+
+    try {
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+      return view('cells.edc', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('CellsController:edc', [$th->getMessage()]);
+      return back()->withErrors('EDC data file not present.');
+    }
+  }
+
+  /**
    * CPC cell
    *
    * @return \Illuminate\View\View

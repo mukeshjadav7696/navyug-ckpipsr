@@ -19,7 +19,7 @@ return [
       'icon' => 'fas fa-home'
     ],
     'about' => [
-      'title' => 'About Us',
+      'title' => ' About Us',
       'links' => [
         [
           'title' => 'Profile',
@@ -28,6 +28,10 @@ return [
         [
           'title' => 'Vision and Mission',
           'url' => '/about/vision-mission'
+        ],
+        [
+          'title' => 'PO and PEOs',
+          'url' => '/about/po-peos'
         ],
         [
           'title' => 'The Trust',
@@ -56,7 +60,16 @@ return [
       'links' => [
         [
           'title' => 'Courses Offered',
-          'url' => '/academics/courses'
+          'links' => [
+            [
+              'title' => 'B.Pharm',
+              'url' => '/academics/courses/bpharm'
+            ],
+            [
+              'title' => 'Short Term Certificate',
+              'url' => '/academics/courses/shortterm'
+            ],
+          ]
         ],
         [
           'title' => 'Approvals',
@@ -102,9 +115,17 @@ return [
               'url' => '/resources/central'
             ],
             [
-              'title' => 'Photo Galary',
-              'url' => '/resources/photo-gallery'
+              'title' => 'EV Charging Station',
+              'url' => '/resources/echarge'
             ],
+            [
+              'title' => 'Medicinal Garden',
+              'url' => '/resources/garden'
+            ],
+            // [
+            //   'title' => 'Photo Galary',
+            //   'url' => '/resources/photo-gallery'
+            // ],
           ]
         ]
         // [
@@ -129,6 +150,10 @@ return [
           'url' => '/students/scholorships'
         ],
         [
+          'title' => 'Hobby Club',
+          'url' => '/students/hobbyclub'
+        ],
+        [
           'title' => 'Notice Board',
           'url' => '/announcements/notice'
         ],
@@ -136,28 +161,28 @@ return [
           'title' => 'Alumni',
           'url' => '/students/alumni'
         ],
-        [
-          'title' => 'SSIP',
-          'url' => '/students/ssip'
-        ],
         [],
+        [
+          'title' => 'Course Website',
+          'url' => '/students/courses'
+        ],
+        [
+          'title' => 'Educational Videos',
+          'url' => '/students/evideos'
+        ],
+        [
+          'title' => 'E-Library',
+          'url' => '/students/elib'
+        ],
         [
           'title' => 'Academic Results',
           'url' => 'https://www.gtu.ac.in/result.aspx'
-        ],
-        [
-          'title' => 'Documents',
-          'url' => '/documents'
-        ],
+        ]
       ]
     ],
     'cells' => [
       'title' => 'Cells',
       'links' => [
-        [
-          'title' => 'Internal Quality Assurance Cell',
-          'url' => '/cells/iqac'
-        ],
         [
           'title' => 'Grievance Redressal Cell',
           'url' => '/cells/grc'
@@ -181,6 +206,14 @@ return [
         [
           'title' => 'SC-ST Cell',
           'url' => '/cells/scst'
+        ],
+        [
+          'title' => 'Entrepreneurship Development Cell',
+          'url' => '/cells/edc'
+        ],
+        [
+          'title' => 'Physically Disability Grievance Redressal Cell',
+          'url' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/644412c0db2c6.pdf'
         ],
       ]
     ],
@@ -298,17 +331,25 @@ return [
           'title' => 'Institution Distinctiveness',
           'url' => '/iqac/distinctiveness'
         ],
+        [
+          'title' => 'RTI',
+          'url' => '/iqac/rti'
+        ],
+        [
+          'title' => 'NIRF',
+          'url' => '/iqac/nirf'
+        ],
       ]
     ],
     'tandp' => [
       'title' => 'T&P',
       'links' => [
         [
-          'title' => 'Committee',
+          'title' => 'About T & P Cell',
           'url' => '/tnp/committee'
         ],
         [
-          'title' => 'Placements',
+          'title' => 'Placement Details',
           'url' => '/tnp/placements'
         ],
         [
@@ -316,9 +357,17 @@ return [
           'url' => '/tnp/visits'
         ],
         [
-          'title' => 'Activity',
+          'title' => 'Industrial Training',
+          'url' => '/tnp/training'
+        ],
+        [
+          'title' => 'Activities',
           'url' => '/tnp/activity'
-        ]
+        ],
+        [
+          'title' => 'Placement Brochures',
+          'url' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/643e69c173a1c.pdf'
+        ],
       ]
     ],
     'activities' => [
@@ -344,19 +393,18 @@ return [
   'quick' => [
     'docs' => [
       'PCI SIF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ffe40fcad.pdf',
-      'NIRF 2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff721152d.pdf',
       'Mandatory Disclosure' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6402ff23a17be.pdf',
     ],
     'newletters' => [
-      '2022-23' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
-      "2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
-      "Winter 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
-      "Winter 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",
-      "Summer 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8e4cfdbd.pdf",
-      "Summer 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd85b4d034.pdf",
-      "Winter 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd9516f8b0.pdf",
-      "2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8af982a6.pdf",
-      "2015" => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8957541b.pdf'
+      'Gunadhya Summmer 2022' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64030079e570a.pdf',
+      "Gunadhya 2020-21" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bddf2cad4b.pdf",
+      "Gunadhya 2019" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bdddcb38ba.pdf",
+      "CKPIPSR e-newsletter Volume 9, Issue II, 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8cbc2bfa.pdf",
+      "CKPIPSR e-newsletter Volume 1o, Issue I, 2018" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8e4cfdbd.pdf",
+      "CKPIPSR e-newsletter Volume 9, Issue I, 2017" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd85b4d034.pdf",
+      "CKPIPSR e-newsletter Volume 8, Issue 2, 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd9516f8b0.pdf",
+      "CKPIPSR e-newsletter Volume 7, Issue 1, 2016" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8af982a6.pdf",
+      "CKPIPSR e-newsletter Volume 6, Issue 1, 2015" => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/641bd8957541b.pdf'
     ],
     'important links' => [
       'JACPC' => 'https://jacpcldce.ac.in/degree-diploma-pharmacy',

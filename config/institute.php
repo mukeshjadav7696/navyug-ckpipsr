@@ -23,9 +23,9 @@ return [
     "short_name" => "CKPIPSR",
     "vision" => "TO DEVELOP PHARMACY GRADUATES WITH FUNDAMENTAL KNOWLEDGE AND PROFESSIONAL COMPETENCE TO IMPROVE HEALTHCARE NEED OF COMMUNITY AND INDUSTRY.",
     "mission" => [
-      "M1" => "To provide state of art teaching learning process.",
+      "M1" => "To provide a state of art teaching learning process.",
       "M2" => "To train students as technical and knowledgeable workforce for society.",
-      "M3" => "To train students as technical and knowledgeable workforce for society."
+      "M3" => "To develop pharmacy professionals as  responsible citizen."
     ],
     "peo" => [
       "KNOWLEDGE" => "To produce pharmacists with strong basics and high technical knowledge of pharmacy to cater the various areas of the pharmaceutical industry and healthcare profession.",

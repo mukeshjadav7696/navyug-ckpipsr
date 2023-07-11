@@ -8,7 +8,7 @@
                     <div class="list-item">
                         <div class="list-item-image">
                             @if ($staff->photo)
-                                <figure class="image is-48x48 is-clipped">
+                                <figure class="image is-96x96 is-clipped">
                                     <img src="{{ asset($staff->photo) }}" alt="">
                                 </figure>
                             @else

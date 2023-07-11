@@ -2,8 +2,34 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\CsvImport;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
+
 class IQACController extends Controller
 {
+
+  /**
+   * `rti` page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function rti()
+  {
+    return view('iqac.rti');
+  }
+
+  /**
+   * `nirf` page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function nirf()
+  {
+    $reports = config('site.documents.iqac.nirf.reports');
+    return view('iqac.nirf', compact('reports'));
+  }
 
   /**
    * `about` page
@@ -22,7 +48,17 @@ class IQACController extends Controller
    */
   public function composition()
   {
-    return view('iqac.composition');
+    //path of file
+    $path = Storage::path('data/iqac/composition.csv');
+
+    try {
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+      return view('iqac.composition', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('CellsController:iqac', [$th->getMessage()]);
+      return back()->withErrors('IQAC data file not present.');
+    }
   }
 
   /**
@@ -42,7 +78,8 @@ class IQACController extends Controller
    */
   public function moms()
   {
-    return view('iqac.moms');
+    $reports = config('site.documents.iqac.moms');
+    return view('iqac.moms', compact('reports'));
   }
 
   /**
@@ -52,7 +89,8 @@ class IQACController extends Controller
    */
   public function aishe()
   {
-    return view('iqac.aishe');
+    $reports = config('site.documents.iqac.aishe.reports');
+    return view('iqac.aishe', compact('reports'));
   }
 
   /**
@@ -72,7 +110,8 @@ class IQACController extends Controller
    */
   public function practices()
   {
-    return view('iqac.practices');
+    $url = config('site.documents.iqac.common.practices');
+    return view('iqac.practices', compact('url'));
   }
 
   /**
@@ -82,6 +121,7 @@ class IQACController extends Controller
    */
   public function distinctiveness()
   {
-    return view('iqac.distinctiveness');
+    $url = config('site.documents.iqac.common.distinctiveness');
+    return view('iqac.distinctiveness', compact('url'));
   }
 }

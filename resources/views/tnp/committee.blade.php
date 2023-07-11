@@ -1,12 +1,12 @@
 <x-app-layout>
     <x-slot name="content">
-        <x-site.pagetitle title="T&P Committee" />
+        <x-site.pagetitle title="About T & P Cell" />
         <x-page-content>
             <div class="columns">
                 <div class="column">
                     <div class="content">
                         <p>
-                            The Career guidance and placement cell of the college functions with the objective of
+                            The Training and Placement cell of the college functions with the objective of
                             providing guidance and assistance for the students to achieve their career goals. It
                             provides awareness on Higher Education or Studies,Self-employment and Job opportunities.
                         </p>

@@ -9,30 +9,44 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class StudentsController extends Controller
 {
-
   /**
-   * Display the ssip page
+   * Display the evideos page
    *
    * @return \Illuminate\View\View
    */
-  public function ssip()
+  public function evideos()
   {
-    try {
+    return view('students.evideos');
+  }
 
-      //path of alumni managing
-      $path = Storage::path('data/students/ssip_core.csv');
-      $committeeC = Excel::toArray(new CsvImport, $path);
-      $committeeC = $committeeC[0];
+  /**
+   * Display the elib page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function elib()
+  {
+    return view('students.elib');
+  }
 
-      $path = Storage::path('data/students/ssip_scrutiny.csv');
-      $committeeS = Excel::toArray(new CsvImport, $path);
-      $committeeS = $committeeS[0];
+  /**
+   * Display the courses page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function courses()
+  {
+    return view('students.courses');
+  }
 
-      return view('students.ssip', compact('committeeC', 'committeeS'));
-    } catch (\Throwable $th) {
-      Log::error('StudentsController:ssip', [$th->getMessage()]);
-      return back()->withErrors('SSIP data file not present.');
-    }
+  /**
+   * Display the hobbyclub page
+   *
+   * @return \Illuminate\View\View
+   */
+  public function hobbyclub()
+  {
+    return view('students.hobbyclub');
   }
 
   /**

@@ -13,37 +13,12 @@
                     </div>
                     <div class="column is-6">
                         <p class="title is-4">Mission</p>
+                        <hr />
                         @foreach (config('institute.info.mission') as $key => $statement)
-                            <blockquote class="is-italic">
+                            <p class="subtitle has-text-info">
                                 {{ $statement }}
-                            </blockquote>
+                            </p>
                         @endforeach
-                    </div>
-                    <div class="column is-12">
-                        <p class="title is-4">PEOs</p>
-                        <div class="columns content">
-                            @foreach (config('institute.info.peo') as $key => $statement)
-                                <div class="column">
-                                    <span class="tag is-primary">{{ $key }}</span>
-                                    <hr />
-                                    <p class="is-italic">
-                                        {{ $statement }}
-                                    </p>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    <div class="column is-12">
-                        <p class="title is-4">PO</p>
-                        <div class="content">
-                            @foreach (config('institute.info.po') as $key => $statement)
-                                <span class="has-text-primary has-text-weight-bold">{{ $key }}</span>
-                                <p class="is-italic">
-                                    {{ $statement }}
-                                </p>
-                                <hr />
-                            @endforeach
-                        </div>
                     </div>
                 </div>
             </div>

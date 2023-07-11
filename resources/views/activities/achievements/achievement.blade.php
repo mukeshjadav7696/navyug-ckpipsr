@@ -1,11 +1,11 @@
   <div class="list-item">
       <div class="list-item-image">
           @if ($achievement->photo)
-              <figure class="image is-96x96">
+              <figure class="image is-128x128">
                   <img src="{{ $achievement->photo }}" alt="">
               </figure>
           @else
-              <figure class="image is-96x96 is-flex is-justify-content-center is-align-items-center">
+              <figure class="image is-128x128 is-flex is-justify-content-center is-align-items-center">
                   <span class="icon is-large">
                       <i class="fas fa-image fa-4x has-text-light"></i>
                   </span>

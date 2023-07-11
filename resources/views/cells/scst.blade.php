@@ -22,6 +22,20 @@
                 </div>
             </div>
             <div class="tab-content is-hidden" id="tab-circulars">
+                <div class="buttons">
+                    <a href="{{ config('site.documents.cells.sc_st.ugc') }}" class="button is-link is-outlined"
+                        target="_blank">
+                        UGC Circular
+                    </a>
+                    <a href="{{ config('site.documents.cells.sc_st.gtu') }}" class="button is-link is-outlined"
+                        target="_blank">
+                        GTU Circular
+                    </a>
+                    <a href="{{ config('site.documents.cells.sc_st.aicte') }}" class="button is-link is-outlined"
+                        target="_blank">
+                        AICTE Circular
+                    </a>
+                </div>
             </div>
             <div class="tab-content is-hidden" id="tab-complaint">
                 <div class="columns is-centered">

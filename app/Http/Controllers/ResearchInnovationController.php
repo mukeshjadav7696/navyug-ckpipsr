@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\CsvImport;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
+
 class ResearchInnovationController extends Controller
 {
 
@@ -52,7 +57,16 @@ class ResearchInnovationController extends Controller
    */
   public function mous()
   {
-    return view('rni.research.mous');
+    try {
+      //path of alumni managing
+      $path = Storage::path('data/rni/mous.csv');
+      $mous = Excel::toArray(new CsvImport, $path);
+      $mous = $mous[0];
+      return view('rni.research.mous', compact('mous'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:mous', [$th->getMessage()]);
+      return back()->withErrors('MOUs data file not present.');
+    }
   }
 
   /**
@@ -62,7 +76,17 @@ class ResearchInnovationController extends Controller
    */
   public function books()
   {
-    return view('rni.research.books');
+    try {
+      //
+      $path = Storage::path('data/rni/books_chapters.csv');
+      $records = Excel::toArray(new CsvImport, $path);
+      $records = $records[0];
+
+      return view('rni.research.books', compact('records'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:iic', [$th->getMessage()]);
+      return back()->withErrors('IIC data file not present.');
+    }
   }
 
   /**
@@ -112,7 +136,21 @@ class ResearchInnovationController extends Controller
    */
   public function ssipAbout()
   {
-    return view('rni.ssip.about');
+    try {
+      //path of alumni managing
+      $path = Storage::path('data/rni/ssip_core.csv');
+      $committeeC = Excel::toArray(new CsvImport, $path);
+      $committeeC = $committeeC[0];
+
+      $path = Storage::path('data/rni/ssip_scrutiny.csv');
+      $committeeS = Excel::toArray(new CsvImport, $path);
+      $committeeS = $committeeS[0];
+
+      return view('rni.ssip.about', compact('committeeC', 'committeeS'));
+    } catch (\Throwable $th) {
+      Log::error('StudentsController:ssip', [$th->getMessage()]);
+      return back()->withErrors('SSIP data file not present.');
+    }
   }
 
   /**
@@ -153,6 +191,16 @@ class ResearchInnovationController extends Controller
    */
   public function iic()
   {
-    return view('rni.iic');
+    try {
+      //path of alumni managing
+      $path = Storage::path('data/rni/iic_committee.csv');
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+
+      return view('rni.iic', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:iic', [$th->getMessage()]);
+      return back()->withErrors('IIC data file not present.');
+    }
   }
 }
