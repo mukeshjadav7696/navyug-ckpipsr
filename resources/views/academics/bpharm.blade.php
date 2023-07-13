@@ -20,7 +20,7 @@
                                         <td>B.Pharm. (Full Time)</td>
                                         <td>100</td>
                                         <td>4 Years</td>
-                                        <td>78000</td>
+                                        <td>81900</td>
                                     </tr>
                                 </tbody>
                             </table>
