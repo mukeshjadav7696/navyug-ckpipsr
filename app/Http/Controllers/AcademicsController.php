@@ -23,6 +23,16 @@ class AcademicsController extends Controller
   {
     return view('academics.bpharm');
   }
+  /**
+   * Display the courses view
+   *
+   * @return \Illuminate\View\View
+   */
+  public function mpharm()
+  {
+    return view('academics.mpharm');
+  }
+
 
   /**
    * Display the admission view

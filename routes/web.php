@@ -185,6 +185,7 @@ Route::prefix('academics')
   ->group(function () {
     Route::get('courses/bpharm', [AcademicsController::class, 'bpharm'])->name('bpharm');
     Route::get('courses/shortterm', [AcademicsController::class, 'shortterm'])->name('shortterm');
+    Route::get('courses/mpharm', [AcademicsController::class, 'mpharm'])->name('mpharm');
     Route::get('admission', [AcademicsController::class, 'admission'])->name('admission');
     Route::get('approvals', [AcademicsController::class, 'approvals'])->name('approvals');
   });

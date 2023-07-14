@@ -66,9 +66,13 @@ return [
               'url' => '/academics/courses/bpharm'
             ],
             [
+              'title' => 'M.Pharm',
+              'url' => '/academics/courses/mpharm'
+            ],
+            [
               'title' => 'Short Term Certificate',
               'url' => '/academics/courses/shortterm'
-            ],
+            ],          
           ]
         ],
         [
