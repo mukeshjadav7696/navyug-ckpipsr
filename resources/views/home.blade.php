@@ -1,5 +1,5 @@
 <x-app-layout>
-    <x-slot name="content">
+    <x-slot name="content">    
         <section class="hero is-primary">
             <div class="hero-body pt-5">
                 <div class="columns">
@@ -45,6 +45,8 @@
                 @include('home.achievements', compact('achievements'))
             </div>
         </section>
+        @include('home.popup')
+    
     </x-slot>
 
 </x-app-layout>
