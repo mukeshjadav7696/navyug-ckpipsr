@@ -9,5 +9,4 @@
             </div>
         </x-page-content>
     </x-slot>
-
 </x-app-layout>

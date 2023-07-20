@@ -17,7 +17,7 @@
                                 <tbody>
                                     <tr>
                                         <td>PCI, New Delhi</td>
-                                        <td>2022-23</td>
+                                        <td>2023-24</td>
                                         <td>
                                             <a href="{{ config('site.documents.academics.approvals.pci') }}"
                                                 target="_blank">
@@ -41,7 +41,7 @@
                                     </tr>
                                     <tr>
                                         <td>GTU, Gandhinagar</td>
-                                        <td>2022-23</td>
+                                        <td>2023-24</td>
                                         <td>
                                             <a href="{{ config('site.documents.academics.approvals.gtu') }}"
                                                 target="_blank">

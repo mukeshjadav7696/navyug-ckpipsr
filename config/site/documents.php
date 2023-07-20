@@ -6,9 +6,9 @@ return [
       'brocure202122' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/63f5ee34afb96.pdf"
     ],
     "approvals" => [
-      'pci' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/63f5e76c46f1e.pdf",
+      'pci' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64b79c0ac6c69.pdf",
       'aicte' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/63f5f6fb749d2.pdf",
-      "gtu" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/63f5f67644685.pdf",
+      "gtu" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64b79c28f32b0.pdf",
       "frc" => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6495285420051.pdf",
     ]
   ],
@@ -35,8 +35,8 @@ return [
   ],
   "iqac" => [
     'common' => [
-      'practices' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/647972cdd5946.pdf',
-      'distinctiveness' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64797330c84fd.pdf'
+      'practices' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64b8d2a1646b7.pdf',
+      'distinctiveness' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64b8d28110b4b.pdf'
     ],
     'moms' => [
       'IQAC Q1-2023' => 'https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/646ef7ec109b6.pdf',
