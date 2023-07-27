@@ -35,7 +35,7 @@
                                             pre-incubation, scale-up, and marketing.</p>
                                     </div>
                                     <div class="column">
-                                        <h5>Out Focus</h5>
+                                        <h5>Our Focus</h5>
                                         <p>
                                             Constitution of Student start-up and innovation Cell, C. K. Pithawalla
                                             Institute of
