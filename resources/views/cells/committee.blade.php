@@ -2,7 +2,6 @@
     <table class="table is-striped is-fullwidth">
         <thead>
             <tr>
-                <th>No</th>
                 <th>Role</th>
                 <th>Member Name</th>
                 <th>Designation</th>
