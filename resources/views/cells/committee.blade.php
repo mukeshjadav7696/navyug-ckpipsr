@@ -2,6 +2,7 @@
     <table class="table is-striped is-fullwidth">
         <thead>
             <tr>
+                <th>No</th>
                 <th>Role</th>
                 <th>Member Name</th>
                 <th>Designation</th>
@@ -12,6 +13,7 @@
         <tbody>
             @foreach ($committee as $member)
                 <tr>
+                    
                     <td>{{ $member['role'] ?? '-' }}</td>
                     <td>{{ $member['name'] }}</td>
                     <td>{{ $member['designation'] }}</td>

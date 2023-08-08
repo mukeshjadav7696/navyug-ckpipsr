@@ -17,7 +17,16 @@ class ResearchInnovationController extends Controller
    */
   public function about()
   {
-    return view('rni.research.about');
+    $path = Storage::path('data/rni/rni.csv');
+    try {
+      $committee = Excel::toArray(new CsvImport, $path);
+      $committee = $committee[0];
+      return view('rni.research.about', compact('committee'));
+    } catch (\Throwable $th) {
+      Log::error('ResearchInnovationController:committee', [$th->getMessage()]);
+      return back()->withErrors('RNI data file not present.');
+    }
+    //return view('rni.research.about');
   }
 
   /**
