@@ -148,7 +148,7 @@ Route::prefix('resources')
     Route::get('/central', [ResourceController::class, 'central'])->name('central');
     Route::get('/hostel', [ResourceController::class, 'hostel'])->name('hostel');
     Route::get('/sports', [ResourceController::class, 'sports'])->name('sports');
-
+    Route::get('/library', [ResourceController::class, 'library'])->name('library');
     Route::get('/laboratories', [ResourceController::class, 'laboratories'])->name('laboratories');
     Route::get('/photo-gallery', [ResourceController::class, 'photoGallery'])->name('photo-gallery');
   });

@@ -32,6 +32,22 @@ class ResourceController extends Controller
   }
 
   /**
+   * library
+   *
+   * @return \Illuminate\View\View
+   */
+  public function library()
+  {
+    $photos = [];
+    for ($i = 1; $i <= 4; $i++) {
+      array_push($photos, asset("images/resources/library/{$i}.jpg"));
+    }
+    return view('resources.library', compact('photos'));
+
+    
+  }
+
+  /**
    * transportation
    *
    * @return \Illuminate\View\View

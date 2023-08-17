@@ -49,10 +49,10 @@ return [
     "address" => "Opposite Surat Airport,\r\nBehind DPS School,\r\nNear Malvan Mandir,\r\nDumas Road, Surat - 395007.",
     "email" => "ckpipsr@gmail.com",
     "mobile" => "6355065636",
-    "other_emails" => [
+    /*"other_emails" => [
       "contact@ckpipsr.ac.in",
       "principal@ckpipsr.ac.in"
-    ],
+    ],*/
     "other_contact_nos" => [
       "9099063116"
     ],

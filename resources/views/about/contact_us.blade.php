@@ -58,14 +58,14 @@
                                             <a href="mailto:{{ config('institute.info.email') }}">
                                                 {{ config('institute.info.email') }}
                                             </a>
-                                            @if (config('institute.info.other_emails'))
+                                           @if (config('institute.info.other_emails'))
                                                 @foreach (config('institute.info.other_emails') as $email)
                                                     <br />
                                                     <a href="mailto:{{ $email }}">
                                                         {{ $email }}
                                                     </a>
-                                                @endforeach
-                                            @endif
+                                                 @endforeach
+                                            @endif  
                                         </p>
                                     </div>
                                 </div>

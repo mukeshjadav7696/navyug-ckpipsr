@@ -91,6 +91,10 @@ return [
               'url' => '/resources/laboratories'
             ],
             [
+              'title' => 'Library',
+              'url' => '/resources/library'
+            ],
+            [
               'title' => 'Sports',
               'url' => '/resources/sports'
             ],
