@@ -40,7 +40,7 @@
         <section class="hero is-white">
             <div class="hero-body">
                 <div class="divider mt-0">
-                    <span class="tag is-large is-primary">Achivements</span>
+                    <span class="tag is-large is-primary">Achievements</span>
                 </div>
                 @include('home.achievements', compact('achievements'))
             </div>

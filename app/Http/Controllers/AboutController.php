@@ -75,6 +75,15 @@ class AboutController extends Controller
   }
 
   /**
+   * Display the committee view
+   *
+   * @return \Illuminate\View\View
+   */
+  public function committees()
+  {
+    return view('about.committee');
+  }
+  /**
    * Display the contact us view
    *
    * @return \Illuminate\View\View

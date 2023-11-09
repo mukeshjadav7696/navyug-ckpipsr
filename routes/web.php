@@ -178,6 +178,9 @@ Route::prefix('about')
     Route::get('founder', [AboutController::class, 'founder'])->name('founder');
     Route::get('governing-body', [AboutController::class, 'governingBody'])->name('governing-body');
     Route::get('contact-us', [AboutController::class, 'contactUs'])->name('contact-us');
+    Route::get('committee', [AboutController::class, 'committees'])->name('committee');
+
+    
   });
 
 Route::prefix('academics')

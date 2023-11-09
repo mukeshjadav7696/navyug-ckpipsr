@@ -27,6 +27,36 @@
                                     <td>Granted</td>
                                 </tr>
                             </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>DR.VINODKUMAR D. RAMANI</td>
+                                    <td>ULTRACENTRIFUGE LABORATORY APPARATUS FOR SEPARATION OF ANOPARTICLES </td>
+                                    <td>385428-001</td>
+                                    <td>02/05/2023</td>
+                                    <td>12/09/2023</td>
+                                    <td>Granted</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>DR.VINODKUMAR D. RAMANI</td>
+                                    <td>LABORATORY ROTARY EVAPORATOR FOR EXTRACTION OF HERBAL DRUGS</td>
+                                    <td>384767-001</td>
+                                    <td>25/04/2023</td>
+                                    <td>10/08/2023</td>
+                                    <td>Granted</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>MR. JITESH JARIWALA</td>
+                                    <td>LABORATORY ROTARY EVAPORATOR FOR EXTRACTION OF HERBAL DRUGS</td>
+                                    <td>384767-001</td>
+                                    <td>25/04/2023</td>
+                                    <td>10/08/2023</td>
+                                    <td>Granted</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

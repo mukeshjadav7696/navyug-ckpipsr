@@ -50,6 +50,10 @@ return [
           'url' => '/about/principal'
         ],
         [
+          'title' => 'Deans and Faculty In-charges',
+          'url' => '/about/committee'
+        ],
+        [
           'title' => 'Contact Us',
           'url' => '/about/contact-us'
         ]
