@@ -57,6 +57,16 @@
                                     <td>Granted</td>
                                 </tr>
                             </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>DR. VAISHNAV DEVENDRA JAYANTILAL</td>
+                                    <td>HPTLC METHOD FOR DETECTION OF PHTHALATE METABOLITES IN BIOLOGICAL MATERIAL</td>
+                                    <td>202021024529</td>
+                                    <td>11/06/2020</td>
+                                    <td>21/09/2023</td>
+                                    <td>Granted</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
