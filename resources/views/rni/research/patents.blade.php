@@ -67,6 +67,16 @@
                                     <td>Granted</td>
                                 </tr>
                             </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>MR. NAISHADH SOLANKI</td>
+                                    <td>PORTABLE TOPICAL DEVICE FOR ESTIMATION OF ULCERS IN STOMACH</td>
+                                    <td>394980-001</td>
+                                    <td>13/09/2023</td>
+                                    <td>30/10/2023</td>
+                                    <td>Granted</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
