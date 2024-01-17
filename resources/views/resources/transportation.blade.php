@@ -12,7 +12,12 @@
 
             <div class="tabs is-centered is-boxed is-medium">
                 <ul>
-                    <li class="tab is-active" data-content="city-bus">
+                    <li class="tab is-active" data-content="college-bus">
+                        <a>
+                            <span>College Facilities</span>
+                        </a>
+                    </li>
+                    <li class="tab" data-content="city-bus">
                         <a>
                             <span>City Bus</span>
                         </a>
@@ -24,8 +29,23 @@
                     </li>
                 </ul>
             </div>
-
-            <div id="city-bus" class="tab-content">
+            <div id="college-bus" class="tab-content">
+                <div class="content">
+                    <div class="columns">
+                        <div class="column">
+                            <figure class="image">
+                                <img src="{{ asset('images/resources/transportation/colbus.jpeg') }}" />
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <figure class="image">
+                                <img src="{{ asset('images/resources/transportation/coltiming.jpeg') }}" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="city-bus" class="tab-content is-hidden">
                 <div class="content">
                     <p>
                         Surat City Bus No 206 is running between Chowk Station and

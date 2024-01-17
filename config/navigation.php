@@ -395,6 +395,10 @@ return [
         ],
       ]
     ],
+    // 'Payment'=>[
+    //   'title' => 'Pay Fees',
+    //   'url' => 'https://rapid.grayquest.com/ck-pithawala-science'
+    // ]
     // 'announcements' => [
     //   'title' => 'Announcements',
     //   'url' => '/announcements/announcement',

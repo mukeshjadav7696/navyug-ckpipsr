@@ -6,7 +6,7 @@
                     <figure class="image is-64x64">
                         <img src="{{ asset('images/logo.png') }}">
                     </figure>
-                    <p class="subtitle ml-2 is-size-6">Navyug Vidyabhvan Trust</p>
+                    <p class="subtitle ml-2 is-size-6">Navyug Vidyabhvan Trust</p>  
                 </a>
             </div>
             <div class="column is-2 is-align-self-center pb-0">
@@ -35,6 +35,7 @@
                     data-tooltip="Contact Us">
                     <i class="fas fa-map"></i>
                 </a>
+                <a href="https://rapid.grayquest.com/ck-pithawala-science">Pay Fees</a>
             </div>
         </div>
     </div>
