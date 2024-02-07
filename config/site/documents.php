@@ -52,6 +52,7 @@ return [
     ],
     'nirf' => [
       "reports" => [
+        'NIRF-2024' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/65aa5112ec024.pdf",
         'NIRF-2023' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/64268088bf45f.pdf",
         'NIRF-2022' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/6426806d3da45.pdf",
         'NIRF-2021' => "https://console-navyugtrust-org.s3.ap-south-1.amazonaws.com/app/institutes/102/departments/docs/642680441c5e4.pdf",
